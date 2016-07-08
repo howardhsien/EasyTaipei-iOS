@@ -345,7 +345,7 @@
                                 <rect key="frame" x="290" y="278" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drc-Z9-wkN">
-                                <rect key="frame" x="540" y="417" width="36" height="36"/>
+                                <rect key="frame" x="535" y="412" width="36" height="36"/>
                                 <state key="normal" image="mapNavigation">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -355,13 +355,13 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KcN-iO-af9" secondAttribute="trailing" id="7jo-3t-iGa"/>
                             <constraint firstItem="KcN-iO-af9" firstAttribute="top" secondItem="XvE-SE-a5w" secondAttribute="bottom" id="OPE-of-0hX"/>
-                            <constraint firstItem="drc-Z9-wkN" firstAttribute="leading" secondItem="CHq-UP-gCb" secondAttribute="trailing" constant="-60" id="Umg-eC-d7m"/>
+                            <constraint firstItem="drc-Z9-wkN" firstAttribute="leading" secondItem="CHq-UP-gCb" secondAttribute="trailing" constant="-65" id="Umg-eC-d7m"/>
                             <constraint firstItem="CHq-UP-gCb" firstAttribute="leading" secondItem="2gr-ij-jjO" secondAttribute="leading" id="Xga-lt-lU3"/>
                             <constraint firstItem="YGe-fl-uUd" firstAttribute="top" secondItem="CHq-UP-gCb" secondAttribute="bottom" id="YBq-E7-u0r"/>
                             <constraint firstItem="XOg-Pu-rYh" firstAttribute="centerY" secondItem="CHq-UP-gCb" secondAttribute="centerY" id="b4S-QB-J3D"/>
                             <constraint firstItem="CHq-UP-gCb" firstAttribute="top" secondItem="XvE-SE-a5w" secondAttribute="bottom" id="lTB-ma-aQn"/>
                             <constraint firstItem="KcN-iO-af9" firstAttribute="leading" secondItem="2gr-ij-jjO" secondAttribute="leading" id="mYn-GZ-edp"/>
-                            <constraint firstItem="drc-Z9-wkN" firstAttribute="top" secondItem="CHq-UP-gCb" secondAttribute="bottom" constant="-70" id="rmy-rc-zGP"/>
+                            <constraint firstItem="drc-Z9-wkN" firstAttribute="top" secondItem="CHq-UP-gCb" secondAttribute="bottom" constant="-75" id="rmy-rc-zGP"/>
                             <constraint firstAttribute="trailing" secondItem="CHq-UP-gCb" secondAttribute="trailing" id="yR5-0g-gv4"/>
                             <constraint firstItem="XOg-Pu-rYh" firstAttribute="centerX" secondItem="CHq-UP-gCb" secondAttribute="centerX" id="zpu-eM-oGU"/>
                         </constraints>
