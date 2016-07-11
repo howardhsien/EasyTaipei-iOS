@@ -10,7 +10,7 @@
         <!--YouBike-->
         <scene sceneID="3Fl-Yz-7AS">
             <objects>
-                <viewController id="Jhq-RG-fKm" customClass="YoubikeViewController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jhq-RG-fKm" customClass="YoubikeViewController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bbk-fx-WlN"/>
                         <viewControllerLayoutGuide type="bottom" id="7Js-AO-tjN"/>
@@ -50,7 +50,7 @@
         <!--MRT-->
         <scene sceneID="99y-oq-Zjf">
             <objects>
-                <viewController id="oOF-oO-0W6" customClass="MRTViewController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oOF-oO-0W6" customClass="MRTViewController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dRg-eu-s30"/>
                         <viewControllerLayoutGuide type="bottom" id="6i7-qc-aot"/>
@@ -69,7 +69,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3Um-lH-Eid">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="syN-Mp-XFm" customClass="TabBarController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="syN-Mp-XFm" customClass="TabBarController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dBY-om-2I6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -174,7 +174,7 @@
         <!--Toilet-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ToiletViewController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ToiletViewController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -276,7 +276,7 @@
         <!--Map View Controller-->
         <scene sceneID="4F6-ij-2HC">
             <objects>
-                <viewController id="8z7-zi-03L" customClass="MapViewController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8z7-zi-03L" customClass="MapViewController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XvE-SE-a5w"/>
                         <viewControllerLayoutGuide type="bottom" id="YGe-fl-uUd"/>
@@ -385,7 +385,7 @@
         <!--Landing Page View Controller-->
         <scene sceneID="dfl-gF-HGH">
             <objects>
-                <viewController id="ofc-3f-yJa" customClass="LandingPageViewController" customModule="EasyTaipei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ofc-3f-yJa" customClass="LandingPageViewController" customModule="Easy_Taipei" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sOz-1V-Rbb"/>
                         <viewControllerLayoutGuide type="bottom" id="nzq-Zr-RZ0"/>

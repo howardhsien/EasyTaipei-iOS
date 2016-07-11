@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B673F2D094DB632EE399AB /* Pods-EasyTaipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.debug.xcconfig"; sourceTree = "<group>"; };
-		64CA7EB91D2B58A6009DDB9A /* EasyTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CA7EB91D2B58A6009DDB9A /* Easy Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CA7EBC1D2B58A6009DDB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CA7EC11D2B58A6009DDB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64CA7EC31D2B58A6009DDB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		64CA7EBA1D2B58A6009DDB9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64CA7EB91D2B58A6009DDB9A /* EasyTaipei.app */,
+				64CA7EB91D2B58A6009DDB9A /* Easy Taipei.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64CA7EB81D2B58A6009DDB9A /* EasyTaipei */ = {
+		64CA7EB81D2B58A6009DDB9A /* Easy Taipei */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64CA7ECB1D2B58A6009DDB9A /* Build configuration list for PBXNativeTarget "EasyTaipei" */;
+			buildConfigurationList = 64CA7ECB1D2B58A6009DDB9A /* Build configuration list for PBXNativeTarget "Easy Taipei" */;
 			buildPhases = (
 				2D38F7209A245634561EE190 /* [CP] Check Pods Manifest.lock */,
 				64CA7EB51D2B58A6009DDB9A /* Sources */,
@@ -202,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = EasyTaipei;
+			name = "Easy Taipei";
 			productName = EasyTaipei;
-			productReference = 64CA7EB91D2B58A6009DDB9A /* EasyTaipei.app */;
+			productReference = 64CA7EB91D2B58A6009DDB9A /* Easy Taipei.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64CA7EB41D2B58A6009DDB9A /* Build configuration list for PBXProject "EasyTaipei" */;
+			buildConfigurationList = 64CA7EB41D2B58A6009DDB9A /* Build configuration list for PBXProject "Easy Taipei" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64CA7EB81D2B58A6009DDB9A /* EasyTaipei */,
+				64CA7EB81D2B58A6009DDB9A /* Easy Taipei */,
 			);
 		};
 /* End PBXProject section */
@@ -451,7 +451,7 @@
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Easy Taipei";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -466,7 +466,7 @@
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Easy Taipei";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -474,7 +474,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64CA7EB41D2B58A6009DDB9A /* Build configuration list for PBXProject "EasyTaipei" */ = {
+		64CA7EB41D2B58A6009DDB9A /* Build configuration list for PBXProject "Easy Taipei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64CA7EC91D2B58A6009DDB9A /* Debug */,
@@ -483,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64CA7ECB1D2B58A6009DDB9A /* Build configuration list for PBXNativeTarget "EasyTaipei" */ = {
+		64CA7ECB1D2B58A6009DDB9A /* Build configuration list for PBXNativeTarget "Easy Taipei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64CA7ECC1D2B58A6009DDB9A /* Debug */,
