@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261BD8C41D3397F600F9F62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8A71D3397F600F9F62B /* Assets.xcassets */; };
+		261BD8C51D3397F600F9F62B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8A81D3397F600F9F62B /* LaunchScreen.storyboard */; };
+		261BD8C61D3397F600F9F62B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8AA1D3397F600F9F62B /* Main.storyboard */; };
+		261BD8C71D3397F600F9F62B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8AD1D3397F600F9F62B /* LandingPageViewController.swift */; };
+		261BD8C81D3397F600F9F62B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8AE1D3397F600F9F62B /* MapViewController.swift */; };
+		261BD8C91D3397F600F9F62B /* MRTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8AF1D3397F600F9F62B /* MRTViewController.swift */; };
+		261BD8CA1D3397F600F9F62B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B01D3397F600F9F62B /* TabBarController.swift */; };
+		261BD8CB1D3397F600F9F62B /* ToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B11D3397F600F9F62B /* ToiletViewController.swift */; };
+		261BD8CC1D3397F600F9F62B /* YoubikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B21D3397F600F9F62B /* YoubikeViewController.swift */; };
+		261BD8CD1D3397F600F9F62B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B41D3397F600F9F62B /* Extensions.swift */; };
+		261BD8CE1D3397F600F9F62B /* HitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B51D3397F600F9F62B /* HitTest.swift */; };
+		261BD8CF1D3397F600F9F62B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B61D3397F600F9F62B /* JSONParser.swift */; };
+		261BD8D01D3397F600F9F62B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8B71D3397F600F9F62B /* Info.plist */; };
+		261BD8D11D3397F600F9F62B /* UIColor+ESYAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8B91D3397F600F9F62B /* UIColor+ESYAdditions.swift */; };
+		261BD8D21D3397F600F9F62B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8BB1D3397F600F9F62B /* AppDelegate.swift */; };
+		261BD8D31D3397F600F9F62B /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8BD1D3397F600F9F62B /* BaseCell.swift */; };
+		261BD8D41D3397F600F9F62B /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8BE1D3397F600F9F62B /* CustomAnnotationView.swift */; };
+		261BD8D51D3397F600F9F62B /* CustomMKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8BF1D3397F600F9F62B /* CustomMKPointAnnotation.swift */; };
+		261BD8D61D3397F600F9F62B /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8C01D3397F600F9F62B /* MenuBar.swift */; };
+		261BD8D71D3397F600F9F62B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8C11D3397F600F9F62B /* MenuCell.swift */; };
+		261BD8D81D3397F600F9F62B /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BD8C21D3397F600F9F62B /* TabButtonView.swift */; };
+		261BD8D91D3397F600F9F62B /* TabButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8C31D3397F600F9F62B /* TabButtonView.xib */; };
+		261BD8DB1D33980B00F9F62B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8DA1D33980B00F9F62B /* Assets.xcassets */; };
+		261BD8DE1D33983B00F9F62B /* EasyTaipei.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 261BD8DD1D33983B00F9F62B /* EasyTaipei.xcworkspace */; };
 		64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7EBC1D2B58A6009DDB9A /* AppDelegate.swift */; };
 		64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CA7EC01D2B58A6009DDB9A /* Main.storyboard */; };
 		64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CA7EC31D2B58A6009DDB9A /* Assets.xcassets */; };
@@ -34,6 +58,30 @@
 /* Begin PBXFileReference section */
 		085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B673F2D094DB632EE399AB /* Pods-EasyTaipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.debug.xcconfig"; sourceTree = "<group>"; };
+		261BD8A71D3397F600F9F62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261BD8A91D3397F600F9F62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		261BD8AB1D3397F600F9F62B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		261BD8AD1D3397F600F9F62B /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		261BD8AE1D3397F600F9F62B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		261BD8AF1D3397F600F9F62B /* MRTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTViewController.swift; sourceTree = "<group>"; };
+		261BD8B01D3397F600F9F62B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		261BD8B11D3397F600F9F62B /* ToiletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletViewController.swift; sourceTree = "<group>"; };
+		261BD8B21D3397F600F9F62B /* YoubikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoubikeViewController.swift; sourceTree = "<group>"; };
+		261BD8B41D3397F600F9F62B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		261BD8B51D3397F600F9F62B /* HitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitTest.swift; sourceTree = "<group>"; };
+		261BD8B61D3397F600F9F62B /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		261BD8B71D3397F600F9F62B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261BD8B91D3397F600F9F62B /* UIColor+ESYAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ESYAdditions.swift"; sourceTree = "<group>"; };
+		261BD8BB1D3397F600F9F62B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		261BD8BD1D3397F600F9F62B /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		261BD8BE1D3397F600F9F62B /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		261BD8BF1D3397F600F9F62B /* CustomMKPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMKPointAnnotation.swift; sourceTree = "<group>"; };
+		261BD8C01D3397F600F9F62B /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		261BD8C11D3397F600F9F62B /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		261BD8C21D3397F600F9F62B /* TabButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
+		261BD8C31D3397F600F9F62B /* TabButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabButtonView.xib; sourceTree = "<group>"; };
+		261BD8DA1D33980B00F9F62B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = EasyTaipei/Assets.xcassets; sourceTree = "<group>"; };
+		261BD8DD1D33983B00F9F62B /* EasyTaipei.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = EasyTaipei.xcworkspace; sourceTree = "<group>"; };
 		64CA7EB91D2B58A6009DDB9A /* Easy Taipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Taipei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CA7EBC1D2B58A6009DDB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CA7EC11D2B58A6009DDB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,9 +129,89 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		261BD8A61D3397F600F9F62B /* EasyTaipei */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8A71D3397F600F9F62B /* Assets.xcassets */,
+				261BD8A81D3397F600F9F62B /* LaunchScreen.storyboard */,
+				261BD8AA1D3397F600F9F62B /* Main.storyboard */,
+				261BD8AC1D3397F600F9F62B /* controller */,
+				261BD8B31D3397F600F9F62B /* helper */,
+				261BD8B71D3397F600F9F62B /* Info.plist */,
+				261BD8B81D3397F600F9F62B /* resource */,
+				261BD8BA1D3397F600F9F62B /* supporting files */,
+				261BD8BC1D3397F600F9F62B /* view */,
+			);
+			path = EasyTaipei;
+			sourceTree = "<group>";
+		};
+		261BD8AC1D3397F600F9F62B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8AD1D3397F600F9F62B /* LandingPageViewController.swift */,
+				261BD8AE1D3397F600F9F62B /* MapViewController.swift */,
+				261BD8AF1D3397F600F9F62B /* MRTViewController.swift */,
+				261BD8B01D3397F600F9F62B /* TabBarController.swift */,
+				261BD8B11D3397F600F9F62B /* ToiletViewController.swift */,
+				261BD8B21D3397F600F9F62B /* YoubikeViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		261BD8B31D3397F600F9F62B /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8B41D3397F600F9F62B /* Extensions.swift */,
+				261BD8B51D3397F600F9F62B /* HitTest.swift */,
+				261BD8B61D3397F600F9F62B /* JSONParser.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		261BD8B81D3397F600F9F62B /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8B91D3397F600F9F62B /* UIColor+ESYAdditions.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		261BD8BA1D3397F600F9F62B /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8BB1D3397F600F9F62B /* AppDelegate.swift */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		261BD8BC1D3397F600F9F62B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				261BD8BD1D3397F600F9F62B /* BaseCell.swift */,
+				261BD8BE1D3397F600F9F62B /* CustomAnnotationView.swift */,
+				261BD8BF1D3397F600F9F62B /* CustomMKPointAnnotation.swift */,
+				261BD8C01D3397F600F9F62B /* MenuBar.swift */,
+				261BD8C11D3397F600F9F62B /* MenuCell.swift */,
+				261BD8C21D3397F600F9F62B /* TabButtonView.swift */,
+				261BD8C31D3397F600F9F62B /* TabButtonView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		261BD8DC1D33981800F9F62B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		64CA7EB01D2B58A6009DDB9A = {
 			isa = PBXGroup;
 			children = (
+				261BD8DD1D33983B00F9F62B /* EasyTaipei.xcworkspace */,
+				261BD8DC1D33981800F9F62B /* New Group */,
+				261BD8DA1D33980B00F9F62B /* Assets.xcassets */,
+				261BD8A61D3397F600F9F62B /* EasyTaipei */,
 				64CA7EBB1D2B58A6009DDB9A /* EasyTaipei */,
 				64CA7EBA1D2B58A6009DDB9A /* Products */,
 				1B462F4CFEF3F8624EA3B2A0 /* Pods */,
@@ -219,7 +347,7 @@
 				TargetAttributes = {
 					64CA7EB81D2B58A6009DDB9A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3C336QTYA6;
+						DevelopmentTeam = 26F3DGXKAT;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -251,10 +379,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261BD8D01D3397F600F9F62B /* Info.plist in Resources */,
+				261BD8D91D3397F600F9F62B /* TabButtonView.xib in Resources */,
+				261BD8C61D3397F600F9F62B /* Main.storyboard in Resources */,
 				64CA7F171D2D87D2009DDB9A /* TabButtonView.xib in Resources */,
+				261BD8DB1D33980B00F9F62B /* Assets.xcassets in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
+				261BD8DE1D33983B00F9F62B /* EasyTaipei.xcworkspace in Resources */,
+				261BD8C51D3397F600F9F62B /* LaunchScreen.storyboard in Resources */,
 				64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */,
+				261BD8C41D3397F600F9F62B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,17 +452,34 @@
 				64CA7F0D1D2C2D64009DDB9A /* UIColor+ESYAdditions.swift in Sources */,
 				64CA7F1D1D2E9DC0009DDB9A /* MenuCell.swift in Sources */,
 				64CA7EDF1D2BB9EE009DDB9A /* TabBarController.swift in Sources */,
+				261BD8D21D3397F600F9F62B /* AppDelegate.swift in Sources */,
+				261BD8D71D3397F600F9F62B /* MenuCell.swift in Sources */,
+				261BD8CF1D3397F600F9F62B /* JSONParser.swift in Sources */,
+				261BD8C91D3397F600F9F62B /* MRTViewController.swift in Sources */,
 				64CA7EDB1D2B5FF9009DDB9A /* MapViewController.swift in Sources */,
 				64CA7EDD1D2B86FC009DDB9A /* JSONParser.swift in Sources */,
+				261BD8D51D3397F600F9F62B /* CustomMKPointAnnotation.swift in Sources */,
 				64CA7ED71D2B5FAF009DDB9A /* YoubikeViewController.swift in Sources */,
+				261BD8C81D3397F600F9F62B /* MapViewController.swift in Sources */,
+				261BD8CE1D3397F600F9F62B /* HitTest.swift in Sources */,
 				64CA7F141D2D690A009DDB9A /* CustomAnnotationView.swift in Sources */,
+				261BD8D31D3397F600F9F62B /* BaseCell.swift in Sources */,
+				261BD8CC1D3397F600F9F62B /* YoubikeViewController.swift in Sources */,
 				64CA7F031D2C046B009DDB9A /* BaseCell.swift in Sources */,
+				261BD8D41D3397F600F9F62B /* CustomAnnotationView.swift in Sources */,
+				261BD8D61D3397F600F9F62B /* MenuBar.swift in Sources */,
 				64CA7F011D2C0420009DDB9A /* MenuBar.swift in Sources */,
 				64CA7F191D2DF18E009DDB9A /* TabButtonView.swift in Sources */,
+				261BD8D11D3397F600F9F62B /* UIColor+ESYAdditions.swift in Sources */,
 				64CA7F151D2D690A009DDB9A /* CustomMKPointAnnotation.swift in Sources */,
 				64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */,
+				261BD8C71D3397F600F9F62B /* LandingPageViewController.swift in Sources */,
 				64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */,
+				261BD8CB1D3397F600F9F62B /* ToiletViewController.swift in Sources */,
+				261BD8D81D3397F600F9F62B /* TabButtonView.swift in Sources */,
+				261BD8CD1D3397F600F9F62B /* Extensions.swift in Sources */,
 				64CA7F051D2C0560009DDB9A /* Extensions.swift in Sources */,
+				261BD8CA1D3397F600F9F62B /* TabBarController.swift in Sources */,
 				64CA7ED91D2B5FDD009DDB9A /* ToiletViewController.swift in Sources */,
 				64CA7F0F1D2CCFA8009DDB9A /* HitTest.swift in Sources */,
 			);
@@ -336,6 +488,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		261BD8A81D3397F600F9F62B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BD8A91D3397F600F9F62B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		261BD8AA1D3397F600F9F62B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261BD8AB1D3397F600F9F62B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		64CA7EC01D2B58A6009DDB9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +614,10 @@
 			baseConfigurationReference = 18B673F2D094DB632EE399AB /* Pods-EasyTaipei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sarah Lee (7Y8BMB93TL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sarah Lee (7Y8BMB93TL)";
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
 				PRODUCT_NAME = "Easy Taipei";
@@ -461,9 +630,10 @@
 			baseConfigurationReference = 7B84880BB6666F82079682A2 /* Pods-EasyTaipei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NianHua Lee (26F3DGXKAT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NianHua Lee (26F3DGXKAT)";
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
 				PRODUCT_NAME = "Easy Taipei";
