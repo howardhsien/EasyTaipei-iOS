@@ -16,6 +16,12 @@ class LandingPageViewController: UIViewController {
         super.viewDidLoad()
         jsonParser.getDataWithCompletionHandler(.Toilet,completion: {
             if let tabBarVC = self.storyboard?.instantiateViewControllerWithIdentifier("TabBarController") as? TabBarController{
+//                if let window =  (UIApplication.sharedApplication().delegate as? AppDelegate)?.window {
+//                    UIView.transitionWithView(window, duration: 0.5, options: .TransitionFlipFromBottom, animations: {window.rootViewController = tabBarVC}, completion:nil )
+//                    
+//                }
+//               
+//                (UIApplication.sharedApplication().delegate as? AppDelegate)?.
                 self.presentViewController(tabBarVC, animated: true, completion: nil)
             }
         })
