@@ -203,7 +203,7 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         if let annotation = view.annotation as? CustomMKPointAnnotation {
-            //            view.backgroundColor = UIColor.mrLightBlueColor()
+            view.backgroundColor = UIColor.esyRobinsEggBlueColor()
             detailPanel.hidden = false
             let annotationLocation = CLLocation( latitude:annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
             if let userLocation = locationManager.location{
