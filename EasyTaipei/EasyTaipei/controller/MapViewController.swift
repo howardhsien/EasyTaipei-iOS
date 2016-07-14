@@ -136,8 +136,6 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
             detailPanelTitleLabel.text = selectedAnnotation.title
             detailPanelSubtitleLabel.text = selectedAnnotation.address
         }
-//        print(mapView.selectedAnnotations.count)
-//        mapView.selectedAnnotations.first
         
     }
     

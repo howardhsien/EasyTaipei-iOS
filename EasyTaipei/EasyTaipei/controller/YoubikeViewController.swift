@@ -21,6 +21,10 @@ class YoubikeViewController: UIViewController {
         switchLangBarButton.action = #selector(switchLangAction)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        TrackingManager.log(event:classDebugInfo+#function)
+    }
     
     
     @IBOutlet weak var switchLangBarButton: UIBarButtonItem!
@@ -29,17 +33,22 @@ class YoubikeViewController: UIViewController {
     var mapViewController :MapViewController?
     @IBAction func refreshAction(sender: AnyObject) {
         mapViewController?.reloadData()
+        TrackingManager.log(event: classDebugInfo+#function)
     }
     
     func switchLangAction(){
+        
+
         switch currentLang {
         case .Chinese:
             //do sth to change lang to english
             currentLang = .English
+            TrackingManager.log(event: classDebugInfo+#function+": to English")
 
         case .English:
             //do sth to change lang to english
             currentLang = .Chinese
+            TrackingManager.log(event: classDebugInfo+#function+": to Chinese")
         }
         mapViewController?.changeLang(currentLang)
         switchLangBarButton.title = currentLang.rawValue

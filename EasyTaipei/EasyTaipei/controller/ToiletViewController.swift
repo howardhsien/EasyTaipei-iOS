@@ -11,6 +11,11 @@ import UIKit
 class ToiletViewController: UIViewController {
     var mapViewController :MapViewController?
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        TrackingManager.log(event:classDebugInfo+#function)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         mapViewController = segue.destinationViewController as? MapViewController
         mapViewController?.showInfoType(dataType: .Toilet)
