@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YouBike" id="0mX-QY-JCB">
+                        <barButtonItem key="leftBarButtonItem" title="中" id="v6r-or-XAl">
+                            <color key="tintColor" red="0.94509803920000002" green="1" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="wvr-H7-7yx">
                             <color key="tintColor" red="0.94509803920000002" green="1" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -42,6 +45,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="switchLangBarButton" destination="v6r-or-XAl" id="rMB-7A-7Ax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKS-U5-7DU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

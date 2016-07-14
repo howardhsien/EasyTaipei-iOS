@@ -27,9 +27,23 @@ class CustomMKPointAnnotation: MKPointAnnotation {
         if let youbike = youbike{
             subtitle = String(format:"%d bike(s)",youbike.bikeLeft)
             address = youbike.address
-            category = youbike.category
             coordinate = CLLocationCoordinate2D(latitude: youbike.latitude, longitude: youbike.longitude)
             title = youbike.name
         }
+    }
+    
+    func changeLang(lang: Lang){
+        if let youbike = youbike{
+            switch lang {
+            case .Chinese:
+                title = youbike.name
+                address = youbike.address
+            case .English:
+                title = youbike.name_en
+                address = youbike.address_en
+
+            }
+        }
+        
     }
 }

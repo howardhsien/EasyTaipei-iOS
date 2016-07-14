@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648349C61D375D14008E96DF /* TPECityToilet.json in Resources */ = {isa = PBXBuildFile; fileRef = 648349C41D375D14008E96DF /* TPECityToilet.json */; };
+		648349C71D375D14008E96DF /* TPERiverSideToilet.json in Resources */ = {isa = PBXBuildFile; fileRef = 648349C51D375D14008E96DF /* TPERiverSideToilet.json */; };
 		64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7EBC1D2B58A6009DDB9A /* AppDelegate.swift */; };
 		64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CA7EC01D2B58A6009DDB9A /* Main.storyboard */; };
 		64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CA7EC31D2B58A6009DDB9A /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTaipei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B673F2D094DB632EE399AB /* Pods-EasyTaipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.debug.xcconfig"; sourceTree = "<group>"; };
+		648349C41D375D14008E96DF /* TPECityToilet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TPECityToilet.json; sourceTree = "<group>"; };
+		648349C51D375D14008E96DF /* TPERiverSideToilet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TPERiverSideToilet.json; sourceTree = "<group>"; };
 		64CA7EB91D2B58A6009DDB9A /* EasyTaipei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTaipei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CA7EBC1D2B58A6009DDB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CA7EC11D2B58A6009DDB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 		64CA7ED11D2B5CB9009DDB9A /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				648349C41D375D14008E96DF /* TPECityToilet.json */,
+				648349C51D375D14008E96DF /* TPERiverSideToilet.json */,
 				64CA7F0C1D2C2D64009DDB9A /* UIColor+ESYAdditions.swift */,
 			);
 			path = resource;
@@ -253,7 +259,9 @@
 			files = (
 				64CA7F171D2D87D2009DDB9A /* TabButtonView.xib in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
+				648349C61D375D14008E96DF /* TPECityToilet.json in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
+				648349C71D375D14008E96DF /* TPERiverSideToilet.json in Resources */,
 				64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
