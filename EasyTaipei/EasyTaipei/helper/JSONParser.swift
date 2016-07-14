@@ -48,8 +48,8 @@ class JSONParser {
     
     //MARK: return the dataUrl array
     static let dataUrlDictionary :[DataType : [String]] = [
-        .Toilet : ["http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=008ed7cf-2340-4bc4-89b0-e258a5573be2",
-                "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe49c753-9358-49dd-8235-1fcadf5bfd3f"],
+//        .Toilet : ["http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=008ed7cf-2340-4bc4-89b0-e258a5573be2",
+//                "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe49c753-9358-49dd-8235-1fcadf5bfd3f"],
         .Youbike : ["http://data.taipei/youbike"]
     ]
     
@@ -59,6 +59,17 @@ class JSONParser {
             completion()
         }
         else{
+            if dataType == .Toilet{
+                if let riverToiletJSON = readJsonFile("TPERiverSideToilet"){
+                    parseToiletTaipeiRiverSide(riverToiletJSON)
+                }
+                if let cityToiletJSON = readJsonFile("TPECityToilet"){
+                    parseToiletTaipeiCity(cityToiletJSON)
+                }
+                completion()
+                return
+            }
+
             guard let urlArray = JSONParser.dataUrlDictionary[dataType] else{ return }
             for index in 0 ..< urlArray.count{
                 dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0) ){
@@ -87,6 +98,23 @@ class JSONParser {
                 }
             }
         }
+    }
+    
+    func readJsonFile(fileName: String) -> AnyObject?{
+        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                
+                let jsonObj = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+                return jsonObj
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        return nil
     }
     
     //MARK: Parsing Method
