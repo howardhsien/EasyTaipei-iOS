@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="YouBike" id="0mX-QY-JCB">
+                        <barButtonItem key="leftBarButtonItem" title="中" id="v6r-or-XAl">
+                            <color key="tintColor" red="0.94509803920000002" green="1" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="wvr-H7-7yx">
                             <color key="tintColor" red="0.94509803920000002" green="1" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -42,6 +45,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="switchLangBarButton" destination="v6r-or-XAl" id="rMB-7A-7Ax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKS-U5-7DU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,24 +400,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-vg-OBU">
-                                <rect key="frame" x="80" y="90" width="440" height="364"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4Pp-vg-OBU" secondAttribute="height" multiplier="23:19" id="6Qn-Zy-8Ql"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by Howard Hsien Sarah Lee" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exX-k5-pmx">
                                 <rect key="frame" x="493" y="538" width="76" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.94509803921568625" green="1" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-vg-OBU">
+                                <rect key="frame" x="80" y="90" width="440" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Pp-vg-OBU" secondAttribute="height" multiplier="23:19" id="6Qn-Zy-8Ql"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176469999999" green="0.31764705879999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4Pp-vg-OBU" firstAttribute="leading" secondItem="QU9-sF-dd3" secondAttribute="leadingMargin" constant="60" id="3tT-3J-54h"/>
                             <constraint firstItem="nzq-Zr-RZ0" firstAttribute="top" secondItem="exX-k5-pmx" secondAttribute="bottom" constant="20" id="BES-in-Uef"/>
-                            <constraint firstItem="nzq-Zr-RZ0" firstAttribute="top" secondItem="4Pp-vg-OBU" secondAttribute="bottom" priority="999" constant="400" id="cOH-AP-j6m"/>
+                            <constraint firstItem="nzq-Zr-RZ0" firstAttribute="top" secondItem="4Pp-vg-OBU" secondAttribute="bottom" priority="999" constant="375" id="cOH-AP-j6m"/>
                             <constraint firstAttribute="trailingMargin" secondItem="exX-k5-pmx" secondAttribute="trailing" constant="11" id="lf6-d2-x3r"/>
                             <constraint firstItem="4Pp-vg-OBU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sOz-1V-Rbb" secondAttribute="bottom" constant="70" id="rd4-49-ZiW"/>
                             <constraint firstItem="4Pp-vg-OBU" firstAttribute="centerX" secondItem="QU9-sF-dd3" secondAttribute="centerX" id="wd4-cp-VDT"/>

@@ -126,6 +126,19 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     //MARK: Method
+    
+    func changeLang(lang:Lang){
+        for annotation in mapView.annotations{
+            guard let annotation = annotation as? CustomMKPointAnnotation else { continue }
+            annotation.changeLang(lang)
+        }
+        if let selectedAnnotation = mapView.selectedAnnotations.first as? CustomMKPointAnnotation{
+            detailPanelTitleLabel.text = selectedAnnotation.title
+            detailPanelSubtitleLabel.text = selectedAnnotation.address
+        }
+        
+    }
+    
     func addAnnotationOnMapview(dataType type: DataType){
         mapView.removeAnnotations(mapView.annotations)
         

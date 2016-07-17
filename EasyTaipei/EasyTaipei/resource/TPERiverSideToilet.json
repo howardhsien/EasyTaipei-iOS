@@ -1,0 +1,2083 @@
+
+{
+  "result": {
+    "offset": 0,
+    "limit": 10000,
+    "count": 259,
+    "sort": "",
+    "results": [
+      {
+        "_id": "1",
+        "Location": "文昌橋下游籃球場旁",
+        "Type": "一般型",
+        "Latitude": "25.09908756",
+        "Longitude": "121.5227053",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "2",
+        "Location": "社子濕地(頭)",
+        "Type": "一般型",
+        "Latitude": "25.11300128",
+        "Longitude": "121.4905471",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "3",
+        "Location": "7段頭快樂休息站",
+        "Type": "一般型",
+        "Latitude": "25.09222405",
+        "Longitude": "121.498242",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "4",
+        "Location": "社子濕地(尾)",
+        "Type": "一般型",
+        "Latitude": "25.11068136",
+        "Longitude": "121.480184",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "5",
+        "Location": "臨7抽水站",
+        "Type": "一般型",
+        "Latitude": "25.10275209",
+        "Longitude": "121.4835869",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "6",
+        "Location": "自行車越野場",
+        "Type": "一般型",
+        "Latitude": "25.11370471",
+        "Longitude": "121.499067",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "7",
+        "Location": "自行車越野場",
+        "Type": "一般型",
+        "Latitude": "25.11367377",
+        "Longitude": "121.4990688",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "8",
+        "Location": "自行車越野場",
+        "Type": "無障礙",
+        "Latitude": "25.11364829",
+        "Longitude": "121.4990706",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "9",
+        "Location": "貴子坑溪出口",
+        "Type": "一般型",
+        "Latitude": "25.11579412",
+        "Longitude": "121.4906379",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "10",
+        "Location": "淡6敦煌水門",
+        "Type": "無障礙",
+        "Latitude": "25.07702753",
+        "Longitude": "121.508318",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "11",
+        "Location": "洲美里體健區",
+        "Type": "一般型",
+        "Latitude": "25.09780848",
+        "Longitude": "121.5104668",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "12",
+        "Location": "洲美大橋下",
+        "Type": "一般型",
+        "Latitude": "25.0997996",
+        "Longitude": "121.4986556",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "13",
+        "Location": "自行車租借站旁",
+        "Type": "一般型",
+        "Latitude": "25.09731047",
+        "Longitude": "121.5089186",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "14",
+        "Location": "百齡右岸橄欖球場",
+        "Type": "一般型",
+        "Latitude": "25.08407877",
+        "Longitude": "121.5159694",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "15",
+        "Location": "百齡右岸籃球場",
+        "Type": "無障礙",
+        "Latitude": "25.08602849",
+        "Longitude": "121.5155991",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "16",
+        "Location": "百齡右岸壘球場",
+        "Type": "無障礙",
+        "Latitude": "25.09388037",
+        "Longitude": "121.513157",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "17",
+        "Location": "社6抽水站",
+        "Type": "一般型",
+        "Latitude": "25.10110853",
+        "Longitude": "121.4962673",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "18",
+        "Location": "福安碼頭",
+        "Type": "一般型",
+        "Latitude": "25.09603358",
+        "Longitude": "121.4937624",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "19",
+        "Location": "百齡橋下",
+        "Type": "一般型",
+        "Latitude": "25.08795591",
+        "Longitude": "121.5120718",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "20",
+        "Location": "百齡橋下",
+        "Type": "一般型",
+        "Latitude": "25.08797502",
+        "Longitude": "121.5120682",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "21",
+        "Location": "百齡橋下",
+        "Type": "無障礙",
+        "Latitude": "25.08799413",
+        "Longitude": "121.5120645",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "22",
+        "Location": "星光廣場(三角公園)",
+        "Type": "一般型",
+        "Latitude": "25.09429992",
+        "Longitude": "121.5026691",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "23",
+        "Location": "東山宮",
+        "Type": "一般型",
+        "Latitude": "25.10961724",
+        "Longitude": "121.474358",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "24",
+        "Location": "社子島頭",
+        "Type": "無障礙",
+        "Latitude": "25.1102108",
+        "Longitude": "121.4665541",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "25",
+        "Location": "社子島頭",
+        "Type": "一般型",
+        "Latitude": "25.1102108",
+        "Longitude": "121.4665359",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "26",
+        "Location": "社子島頭",
+        "Type": "一般型",
+        "Latitude": "25.11020125",
+        "Longitude": "121.4665714",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "27",
+        "Location": "社子大橋下",
+        "Type": "無障礙",
+        "Latitude": "25.11157674",
+        "Longitude": "121.4934661",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "28",
+        "Location": "溜冰場",
+        "Type": "一般型",
+        "Latitude": "25.08567847",
+        "Longitude": "121.5127651",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "29",
+        "Location": "三腳渡龍舟廣場區",
+        "Type": "一般型",
+        "Latitude": "25.08091281",
+        "Longitude": "121.5174739",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "30",
+        "Location": "溜冰場",
+        "Type": "一般型",
+        "Latitude": "25.0856658",
+        "Longitude": "121.5127672",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "31",
+        "Location": "百齡右岸橄欖球場",
+        "Type": "一般型",
+        "Latitude": "25.08409709",
+        "Longitude": "121.515964",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "32",
+        "Location": "百齡右岸籃球場",
+        "Type": "一般型",
+        "Latitude": "25.08600769",
+        "Longitude": "121.5156047",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "33",
+        "Location": "百齡右岸足球場",
+        "Type": "無障礙",
+        "Latitude": "25.08715934",
+        "Longitude": "121.5154317",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "34",
+        "Location": "百齡右岸足球場",
+        "Type": "一般型",
+        "Latitude": "25.089525",
+        "Longitude": "121.5151115",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "35",
+        "Location": "百齡橋下",
+        "Type": "一般型",
+        "Latitude": "25.09022415",
+        "Longitude": "121.5148912",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "36",
+        "Location": "百齡右岸停車場",
+        "Type": "無障礙",
+        "Latitude": "25.08232382",
+        "Longitude": "121.5166479",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "37",
+        "Location": "百齡右岸壘球場",
+        "Type": "一般型",
+        "Latitude": "25.09294981",
+        "Longitude": "121.5138261",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "38",
+        "Location": "百齡右岸壘球場",
+        "Type": "一般型",
+        "Latitude": "25.09389847",
+        "Longitude": "121.5131411",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "39",
+        "Location": "百齡右岸壘球場",
+        "Type": "一般型",
+        "Latitude": "25.09464092",
+        "Longitude": "121.5124638",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "40",
+        "Location": "士林橋捷運橋上游約10公尺",
+        "Type": "無障礙",
+        "Latitude": "25.0991089",
+        "Longitude": "121.5240739",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "41",
+        "Location": "7段頭快樂休息站",
+        "Type": "無障礙",
+        "Latitude": "25.09223247",
+        "Longitude": "121.4982333",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "42",
+        "Location": "承德橋停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.07722914",
+        "Longitude": "121.5193553",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "43",
+        "Location": "體健設施",
+        "Type": "一般型",
+        "Latitude": "25.08181238",
+        "Longitude": "121.5139153",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "44",
+        "Location": "網球場旁停車場",
+        "Type": "一般型",
+        "Latitude": "25.09144853",
+        "Longitude": "121.511845",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "45",
+        "Location": "籃球場旁停車場",
+        "Type": "一般型",
+        "Latitude": "25.0920935",
+        "Longitude": "121.5104033",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "46",
+        "Location": "社子棒球場",
+        "Type": "無障礙",
+        "Latitude": "25.09338201",
+        "Longitude": "121.5071117",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "47",
+        "Location": "社子棒球場",
+        "Type": "一般型",
+        "Latitude": "25.09337955",
+        "Longitude": "121.5071296",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "48",
+        "Location": "社子棒球場",
+        "Type": "一般型",
+        "Latitude": "25.09358201",
+        "Longitude": "121.5056765",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "49",
+        "Location": "星光廣場(三角公園)",
+        "Type": "無障礙",
+        "Latitude": "25.0943072",
+        "Longitude": "121.5026554",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "50",
+        "Location": "三腳渡龍舟廣場區",
+        "Type": "無障礙",
+        "Latitude": "25.08067728",
+        "Longitude": "121.5178078",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "51",
+        "Location": "三腳渡龍舟廣場區",
+        "Type": "一般型",
+        "Latitude": "25.08069048",
+        "Longitude": "121.5178133",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "52",
+        "Location": "福林橋下",
+        "Type": "無障礙",
+        "Latitude": "25.10055355",
+        "Longitude": "121.5266102",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "53",
+        "Location": "自行車租借站旁",
+        "Type": "無障礙",
+        "Latitude": "25.09736059",
+        "Longitude": "121.5089117",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "54",
+        "Location": "自行車租借站旁",
+        "Type": "一般型",
+        "Latitude": "25.09733465",
+        "Longitude": "121.5089156",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "55",
+        "Location": "社6濕地",
+        "Type": "一般型",
+        "Latitude": "25.10758743",
+        "Longitude": "121.4693569",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "56",
+        "Location": "富洲公園",
+        "Type": "無障礙",
+        "Latitude": "25.10511607",
+        "Longitude": "121.4764211",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "57",
+        "Location": "福安碼頭",
+        "Type": "無障礙",
+        "Latitude": "25.09604839",
+        "Longitude": "121.493752",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "58",
+        "Location": "福安公園",
+        "Type": "無障礙",
+        "Latitude": "25.0946029",
+        "Longitude": "121.4951495",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "59",
+        "Location": "台北橋下",
+        "Type": "一般型",
+        "Latitude": "25.06361599",
+        "Longitude": "121.508636",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "60",
+        "Location": "淡6敦煌水門",
+        "Type": "一般型",
+        "Latitude": "25.07700503",
+        "Longitude": "121.5083232",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "61",
+        "Location": "重陽橋下",
+        "Type": "一般型",
+        "Latitude": "25.08589919",
+        "Longitude": "121.5050419",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "62",
+        "Location": "7段頭快樂休息站",
+        "Type": "一般型",
+        "Latitude": "25.09223948",
+        "Longitude": "121.4982253",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "63",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.12163185",
+        "Longitude": "121.4620011",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "64",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.12160597",
+        "Longitude": "121.4620008",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "65",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.12158193",
+        "Longitude": "121.4619996",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "66",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.12155975",
+        "Longitude": "121.461998",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "67",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.12153171",
+        "Longitude": "121.4619968",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "68",
+        "Location": "民權大橋上游棒壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.06309336",
+        "Longitude": "121.5709163",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "69",
+        "Location": "基2號疏散門旁",
+        "Type": "無障礙",
+        "Latitude": "25.05855115",
+        "Longitude": "121.5926049",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "70",
+        "Location": "高速公路橋下",
+        "Type": "一般型",
+        "Latitude": "25.07280368",
+        "Longitude": "121.5702279",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "71",
+        "Location": "壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.07165059",
+        "Longitude": "121.5671612",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "72",
+        "Location": "基左成美橋下游100m處",
+        "Type": "一般型",
+        "Latitude": "25.05163618",
+        "Longitude": "121.5772598",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "73",
+        "Location": "松河街360號對面",
+        "Type": "一般型",
+        "Latitude": "25.05390276",
+        "Longitude": "121.5864983",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "74",
+        "Location": "成美長壽橋下",
+        "Type": "一般型",
+        "Latitude": "25.05384587",
+        "Longitude": "121.5808075",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "75",
+        "Location": "潭美街與新明路219巷口(13號水門旁)",
+        "Type": "一般型",
+        "Latitude": "25.05724796",
+        "Longitude": "121.5879168",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "76",
+        "Location": "松河街422號對面",
+        "Type": "一般型",
+        "Latitude": "25.05747849",
+        "Longitude": "121.5913527",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "77",
+        "Location": "松河街3號對面",
+        "Type": "一般型",
+        "Latitude": "25.05100674",
+        "Longitude": "121.5717989",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "78",
+        "Location": "松河街28號對面",
+        "Type": "一般型",
+        "Latitude": "25.05084321",
+        "Longitude": "121.5729336",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "79",
+        "Location": "松河街46號對面",
+        "Type": "一般型",
+        "Latitude": "25.05085478",
+        "Longitude": "121.5736697",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "80",
+        "Location": "松河街146號對面",
+        "Type": "一般型",
+        "Latitude": "25.05133167",
+        "Longitude": "121.5760225",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "81",
+        "Location": "松河街76號對面",
+        "Type": "一般型",
+        "Latitude": "25.05092242",
+        "Longitude": "121.5741768",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "82",
+        "Location": "基6疏散門上游90m停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.06434655",
+        "Longitude": "121.5683717",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "83",
+        "Location": "高速公路上游320m停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.06825712",
+        "Longitude": "121.5688921",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "84",
+        "Location": "大溝溪生態治水園區",
+        "Type": "無障礙",
+        "Latitude": "25.09061244",
+        "Longitude": "121.5961999",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "85",
+        "Location": "大溝溪生態治水園區",
+        "Type": "一般型",
+        "Latitude": "25.09062978",
+        "Longitude": "121.5961932",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "86",
+        "Location": "大直橋上游220公尺",
+        "Type": "一般型",
+        "Latitude": "25.07376182",
+        "Longitude": "121.5461612",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "87",
+        "Location": "大直橋上游220公尺",
+        "Type": "一般型",
+        "Latitude": "25.07373465",
+        "Longitude": "121.5461529",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "88",
+        "Location": "大直橋上游220公尺",
+        "Type": "無障礙",
+        "Latitude": "25.07370991",
+        "Longitude": "121.5461555",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "89",
+        "Location": "大直橋上游500公尺",
+        "Type": "一般型",
+        "Latitude": "25.07372611",
+        "Longitude": "121.5484685",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "90",
+        "Location": "大直橋上游500公尺",
+        "Type": "一般型",
+        "Latitude": "25.07371436",
+        "Longitude": "121.5484711",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "91",
+        "Location": "大直橋上游500公尺",
+        "Type": "無障礙",
+        "Latitude": "25.07370199",
+        "Longitude": "121.5484697",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "92",
+        "Location": "基7號疏散門下游280公尺",
+        "Type": "一般型",
+        "Latitude": "25.07387031",
+        "Longitude": "121.5507698",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "93",
+        "Location": "基7號疏散門下游280公尺",
+        "Type": "一般型",
+        "Latitude": "25.07385051",
+        "Longitude": "121.5507751",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "94",
+        "Location": "基7號疏散門下游280公尺",
+        "Type": "無障礙",
+        "Latitude": "25.07383075",
+        "Longitude": "121.5507669",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "95",
+        "Location": "基7號疏散門上游130公尺",
+        "Type": "一般型",
+        "Latitude": "25.07366846",
+        "Longitude": "121.5531748",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "96",
+        "Location": "基7號疏散門上游130公尺",
+        "Type": "一般型",
+        "Latitude": "25.07367335",
+        "Longitude": "121.5531911",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "97",
+        "Location": "基7號疏散門上游130公尺",
+        "Type": "無障礙",
+        "Latitude": "25.07366833",
+        "Longitude": "121.5532101",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "98",
+        "Location": "基7號疏散門上游500公尺",
+        "Type": "無障礙",
+        "Latitude": "25.07361264",
+        "Longitude": "121.5555397",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "99",
+        "Location": "基7號疏散門上游500公尺",
+        "Type": "一般型",
+        "Latitude": "25.07331869",
+        "Longitude": "121.5567631",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "100",
+        "Location": "基7號疏散門上游500公尺",
+        "Type": "一般型",
+        "Latitude": "25.07334095",
+        "Longitude": "121.5567632",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "101",
+        "Location": "狗運動公園旁",
+        "Type": "一般型",
+        "Latitude": "25.07174971",
+        "Longitude": "121.5652057",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "102",
+        "Location": "狗運動公園旁",
+        "Type": "一般型",
+        "Latitude": "25.07172004",
+        "Longitude": "121.5652029",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "103",
+        "Location": "狗運動公園旁",
+        "Type": "無障礙",
+        "Latitude": "25.0717868",
+        "Longitude": "121.5652086",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "104",
+        "Location": "高速公路橋下",
+        "Type": "一般型",
+        "Latitude": "25.07084778",
+        "Longitude": "121.5690951",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "105",
+        "Location": "松河街與南港路3段與106巷口(3號水門旁)",
+        "Type": "一般型",
+        "Latitude": "25.05530704",
+        "Longitude": "121.5890125",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "106",
+        "Location": "成美長壽橋",
+        "Type": "一般型",
+        "Latitude": "25.05250335",
+        "Longitude": "121.5811989",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "107",
+        "Location": "成功橋下",
+        "Type": "一般型",
+        "Latitude": "25.05858245",
+        "Longitude": "121.592691",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "108",
+        "Location": "基12號門",
+        "Type": "一般型",
+        "Latitude": "25.06092695",
+        "Longitude": "121.5948651",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "109",
+        "Location": "基13號門旁",
+        "Type": "無障礙",
+        "Latitude": "25.05714549",
+        "Longitude": "121.588121",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "110",
+        "Location": "基13號們下游100公尺處",
+        "Type": "一般型",
+        "Latitude": "25.0568972",
+        "Longitude": "121.5873394",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "111",
+        "Location": "麥帥一橋橋墩旁",
+        "Type": "一般型",
+        "Latitude": "25.05331353",
+        "Longitude": "121.5741474",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "112",
+        "Location": "麥帥二橋下",
+        "Type": "一般型",
+        "Latitude": "25.0571635",
+        "Longitude": "121.5732891",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "113",
+        "Location": "麥帥二橋下",
+        "Type": "無障礙",
+        "Latitude": "25.05720676",
+        "Longitude": "121.5732733",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "114",
+        "Location": "民權大橋下河岸側兒童遊憩設施旁",
+        "Type": "一般型",
+        "Latitude": "25.06429569",
+        "Longitude": "121.570611",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "115",
+        "Location": "網球場旁",
+        "Type": "一般型",
+        "Latitude": "25.06199466",
+        "Longitude": "121.5724698",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "116",
+        "Location": "網球場旁",
+        "Type": "一般型",
+        "Latitude": "25.06197487",
+        "Longitude": "121.5724724",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "117",
+        "Location": "網球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.06195508",
+        "Longitude": "121.5724737",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "118",
+        "Location": "民權大橋下游堤防側",
+        "Type": "一般型",
+        "Latitude": "25.06534942",
+        "Longitude": "121.5720961",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "119",
+        "Location": "民權大橋旁上游停車場",
+        "Type": "一般型",
+        "Latitude": "25.06427861",
+        "Longitude": "121.5721563",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "120",
+        "Location": "民權大橋旁上游停車場",
+        "Type": "無障礙",
+        "Latitude": "25.06426161",
+        "Longitude": "121.5721565",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "121",
+        "Location": "環山抽水站上游停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.07576934",
+        "Longitude": "121.5634891",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "122",
+        "Location": "環山抽水站上游停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.07575327",
+        "Longitude": "121.5634877",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "123",
+        "Location": "基16疏散門上游210m停車場",
+        "Type": "一般型",
+        "Latitude": "25.0767125",
+        "Longitude": "121.5580189",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "124",
+        "Location": "基右美堤越堤坡道前停車場周邊(靠壘球場)",
+        "Type": "一般型",
+        "Latitude": "25.07582252",
+        "Longitude": "121.5647901",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "125",
+        "Location": "基右美堤越堤坡道前停車場周邊(靠壘球場)",
+        "Type": "一般型",
+        "Latitude": "25.07580643",
+        "Longitude": "121.5647941",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "126",
+        "Location": "基右美堤越堤坡道前停車場周邊(靠壘球場)",
+        "Type": "無障礙",
+        "Latitude": "25.07582723",
+        "Longitude": "121.5648512",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "127",
+        "Location": "基右美堤網球場周邊",
+        "Type": "一般型",
+        "Latitude": "25.07688146",
+        "Longitude": "121.5540378",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "128",
+        "Location": "基右美堤網球場周邊",
+        "Type": "一般型",
+        "Latitude": "25.07686384",
+        "Longitude": "121.5540378",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "129",
+        "Location": "南湖橋下",
+        "Type": "一般型",
+        "Latitude": "25.06356874",
+        "Longitude": "121.6112635",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "130",
+        "Location": "麥帥一橋橋墩旁",
+        "Type": "無障礙",
+        "Latitude": "25.05324439",
+        "Longitude": "121.5742496",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "131",
+        "Location": "溜冰場旁",
+        "Type": "無障礙",
+        "Latitude": "25.07505556",
+        "Longitude": "121.5268333",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "132",
+        "Location": "基右大直橋自行車牽引道",
+        "Type": "一般型",
+        "Latitude": "25.07727489",
+        "Longitude": "121.5439488",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "133",
+        "Location": "網球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.07691101",
+        "Longitude": "121.5540373",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "134",
+        "Location": "美堤河濱公園自行車租借站旁",
+        "Type": "一般型",
+        "Latitude": "25.07598473",
+        "Longitude": "121.5613328",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "135",
+        "Location": "美堤河濱公園自行車租借站旁",
+        "Type": "一般型",
+        "Latitude": "25.07598904",
+        "Longitude": "121.5613137",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "136",
+        "Location": "美堤河濱公園自行車租借站旁",
+        "Type": "無障礙",
+        "Latitude": "25.07598593",
+        "Longitude": "121.5613242",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "137",
+        "Location": "中山高速公路橋下",
+        "Type": "一般型",
+        "Latitude": "25.07138026",
+        "Longitude": "121.572722",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "138",
+        "Location": "麥帥二橋下",
+        "Type": "一般型",
+        "Latitude": "25.05711639",
+        "Longitude": "121.5732992",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "139",
+        "Location": "麥帥一橋下游250m停車場",
+        "Type": "一般型",
+        "Latitude": "25.05513504",
+        "Longitude": "121.5736019",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "140",
+        "Location": "麥帥一橋橋墩旁",
+        "Type": "一般型",
+        "Latitude": "25.05328167",
+        "Longitude": "121.5742009",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "141",
+        "Location": "成美橋旁",
+        "Type": "一般型",
+        "Latitude": "25.05462302",
+        "Longitude": "121.5824292",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "142",
+        "Location": "成功橋自行車牽引道下",
+        "Type": "一般型",
+        "Latitude": "25.05935757",
+        "Longitude": "121.5909596",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "143",
+        "Location": "基1號疏散門旁",
+        "Type": "一般型",
+        "Latitude": "25.05924932",
+        "Longitude": "121.6215525",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "144",
+        "Location": "南湖大橋牽引道旁",
+        "Type": "一般型",
+        "Latitude": "25.06290109",
+        "Longitude": "121.6126101",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "145",
+        "Location": "基左成美橋下游100m處",
+        "Type": "無障礙",
+        "Latitude": "25.05163911",
+        "Longitude": "121.5772773",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "146",
+        "Location": "基左成美橋下游100m處",
+        "Type": "一般型",
+        "Latitude": "25.05164359",
+        "Longitude": "121.5772957",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "147",
+        "Location": "麥帥一橋圓柱旁",
+        "Type": "一般型",
+        "Latitude": "25.05163691",
+        "Longitude": "121.5710572",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "148",
+        "Location": "麥帥二橋圓柱旁",
+        "Type": "一般型",
+        "Latitude": "25.05501962",
+        "Longitude": "121.5702597",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "149",
+        "Location": "基5號水門旁",
+        "Type": "無障礙",
+        "Latitude": "25.05887908",
+        "Longitude": "121.569581",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "150",
+        "Location": "高速公路橋下",
+        "Type": "無障礙",
+        "Latitude": "25.07085248",
+        "Longitude": "121.5690276",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "151",
+        "Location": "高速公路橋下",
+        "Type": "無障礙",
+        "Latitude": "25.07280672",
+        "Longitude": "121.5701264",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "152",
+        "Location": "壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.07171359",
+        "Longitude": "121.5671665",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "153",
+        "Location": "基8號疏散門正前方",
+        "Type": "無障礙",
+        "Latitude": "25.07388253",
+        "Longitude": "121.5400277",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "154",
+        "Location": "基8號疏散門正前方",
+        "Type": "一般型",
+        "Latitude": "25.07387959",
+        "Longitude": "121.5400854",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "155",
+        "Location": "基8號疏散門正前方",
+        "Type": "一般型",
+        "Latitude": "25.07387959",
+        "Longitude": "121.5400635",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "156",
+        "Location": "兒童遊戲區",
+        "Type": "景觀",
+        "Latitude": "25.07451499",
+        "Longitude": "121.5358549",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "157",
+        "Location": "兒童遊戲區",
+        "Type": "景觀",
+        "Latitude": "25.07451329",
+        "Longitude": "121.5359224",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "158",
+        "Location": "兒童遊戲區",
+        "Type": "景觀",
+        "Latitude": "25.07457442",
+        "Longitude": "121.5359224",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "159",
+        "Location": "碼頭南側",
+        "Type": "景觀",
+        "Latitude": "25.07559831",
+        "Longitude": "121.5371953",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "160",
+        "Location": "碼頭南側",
+        "Type": "景觀",
+        "Latitude": "25.07559831",
+        "Longitude": "121.5372366",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "161",
+        "Location": "碼頭南側",
+        "Type": "景觀",
+        "Latitude": "25.07559831",
+        "Longitude": "121.5372816",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "162",
+        "Location": "碼頭南側",
+        "Type": "景觀",
+        "Latitude": "25.07559661",
+        "Longitude": "121.5373303",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "163",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07554055",
+        "Longitude": "121.5430095",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "164",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07553549",
+        "Longitude": "121.543043",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "165",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07553323",
+        "Longitude": "121.5430766",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "166",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.0755338",
+        "Longitude": "121.543107",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "167",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07553323",
+        "Longitude": "121.5431337",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "168",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07553098",
+        "Longitude": "121.5431592",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "169",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07552986",
+        "Longitude": "121.5431847",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "170",
+        "Location": "近大直橋下游岸邊",
+        "Type": "景觀",
+        "Latitude": "25.07552705",
+        "Longitude": "121.543212",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "171",
+        "Location": "客家園區鋼橋下",
+        "Type": "固定式",
+        "Latitude": "25.02001569",
+        "Longitude": "121.5225596",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "172",
+        "Location": "華江橋上游棒壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.03434471",
+        "Longitude": "121.4873703",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "173",
+        "Location": "華江橋上游棒壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.03431912",
+        "Longitude": "121.4874283",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "174",
+        "Location": "華江橋上游棒壘球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.03433147",
+        "Longitude": "121.4873987",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "175",
+        "Location": "華江橋上游籃球場、網球場間",
+        "Type": "一般型",
+        "Latitude": "25.0341574",
+        "Longitude": "121.4877952",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "176",
+        "Location": "華江橋上游籃球場、網球場間",
+        "Type": "一般型",
+        "Latitude": "25.0339509",
+        "Longitude": "121.4882562",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "177",
+        "Location": "華江橋上游籃球場、網球場間",
+        "Type": "一般型",
+        "Latitude": "25.03416722",
+        "Longitude": "121.4877729",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "178",
+        "Location": "忠孝橋下方",
+        "Type": "一般型",
+        "Latitude": "25.04927889",
+        "Longitude": "121.5049892",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "179",
+        "Location": "貴陽疏散門前方",
+        "Type": "無障礙",
+        "Latitude": "25.04136384",
+        "Longitude": "121.4983571",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "180",
+        "Location": "萬板橋下游公車停車場旁",
+        "Type": "一般型",
+        "Latitude": "25.03100758",
+        "Longitude": "121.488238",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "181",
+        "Location": "華中橋下游網球場旁",
+        "Type": "一般型",
+        "Latitude": "25.01657349",
+        "Longitude": "121.4915048",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "182",
+        "Location": "華中橋下游自行車練習場旁",
+        "Type": "無障礙",
+        "Latitude": "25.01222633",
+        "Longitude": "121.4951211",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "183",
+        "Location": "中正橋下游約200公尺跨堤行人陸橋下",
+        "Type": "一般型",
+        "Latitude": "25.02376692",
+        "Longitude": "121.5145149",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "184",
+        "Location": "福和橋下",
+        "Type": "一般型",
+        "Latitude": "25.00866753",
+        "Longitude": "121.5327446",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "185",
+        "Location": "景文街自行車鋼便橋旁",
+        "Type": "一般型",
+        "Latitude": "24.99641883",
+        "Longitude": "121.5352528",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "186",
+        "Location": "育英疏散門下游網球場旁與溜冰場間",
+        "Type": "一般型",
+        "Latitude": "24.9903052",
+        "Longitude": "121.5366012",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "187",
+        "Location": "和興水密門自行車牽引道旁",
+        "Type": "一般型",
+        "Latitude": "24.98648188",
+        "Longitude": "121.5506404",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "188",
+        "Location": "籃球場旁",
+        "Type": "無障礙",
+        "Latitude": "24.98401471",
+        "Longitude": "121.5453485",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "189",
+        "Location": "一壽橋旁上游20公尺處",
+        "Type": "無障礙",
+        "Latitude": "24.97695822",
+        "Longitude": "121.5568666",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "190",
+        "Location": "木新抽水站堤頂",
+        "Type": "一般型",
+        "Latitude": "24.98177377",
+        "Longitude": "121.5656379",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "191",
+        "Location": "恆光橋下",
+        "Type": "一般型",
+        "Latitude": "24.98085321",
+        "Longitude": "121.5675117",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "192",
+        "Location": "萬壽橋下",
+        "Type": "無障礙",
+        "Latitude": "24.99156153",
+        "Longitude": "121.5716919",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "193",
+        "Location": "政大籃球場",
+        "Type": "一般型",
+        "Latitude": "24.98523617",
+        "Longitude": "121.5727746",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "194",
+        "Location": "捷運橋下附近",
+        "Type": "一般型",
+        "Latitude": "24.9978634",
+        "Longitude": "121.5749016",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "195",
+        "Location": "捷運橋下附近",
+        "Type": "無障礙",
+        "Latitude": "24.99784768",
+        "Longitude": "121.5748964",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "196",
+        "Location": "動物園自行車租借站旁",
+        "Type": "無障礙",
+        "Latitude": "24.99910287",
+        "Longitude": "121.5792242",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "197",
+        "Location": "足球場旁捷運橋下",
+        "Type": "一般型",
+        "Latitude": "24.99763281",
+        "Longitude": "121.5763761",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "198",
+        "Location": "馬場町疏散門上游約100公尺臨河岸側",
+        "Type": "一般型",
+        "Latitude": "25.02075759",
+        "Longitude": "121.5066581",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "199",
+        "Location": "馬場町疏散門上游約100公尺臨河岸側",
+        "Type": "無障礙",
+        "Latitude": "25.02074354",
+        "Longitude": "121.5066682",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "200",
+        "Location": "華江橋下臨水防道路旁",
+        "Type": "無障礙",
+        "Latitude": "25.03555619",
+        "Longitude": "121.490209",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "201",
+        "Location": "下游籃球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.01983174",
+        "Longitude": "121.5207545",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "202",
+        "Location": "政大籃球場",
+        "Type": "無障礙",
+        "Latitude": "24.985235",
+        "Longitude": "121.5727968",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "203",
+        "Location": "動物園自行車租借站旁",
+        "Type": "一般型",
+        "Latitude": "24.99912483",
+        "Longitude": "121.5792657",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "204",
+        "Location": "遙控賽車場旁",
+        "Type": "無障礙",
+        "Latitude": "24.99914628",
+        "Longitude": "121.5778606",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "205",
+        "Location": "萬壽橋下",
+        "Type": "一般型",
+        "Latitude": "24.99158764",
+        "Longitude": "121.5724601",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "206",
+        "Location": "萬壽橋下",
+        "Type": "無障礙",
+        "Latitude": "24.9915858",
+        "Longitude": "121.5724139",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "207",
+        "Location": "恆光橋下游烤肉區",
+        "Type": "無障礙",
+        "Latitude": "24.98019318",
+        "Longitude": "121.5670429",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "208",
+        "Location": "恆光橋下游烤肉區",
+        "Type": "一般型",
+        "Latitude": "24.98016637",
+        "Longitude": "121.5670395",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "209",
+        "Location": "道南橋上游自行車牽引道旁",
+        "Type": "一般型",
+        "Latitude": "24.98848568",
+        "Longitude": "121.571239",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "210",
+        "Location": "萬壽橋下",
+        "Type": "一般型",
+        "Latitude": "24.99176883",
+        "Longitude": "121.5716513",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "211",
+        "Location": "恆光橋上游約400公尺處網球場旁",
+        "Type": "一般型",
+        "Latitude": "24.98303001",
+        "Longitude": "121.5704337",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "212",
+        "Location": "恆光橋上游約400公尺處網球場旁",
+        "Type": "一般型",
+        "Latitude": "24.98303293",
+        "Longitude": "121.5704444",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "213",
+        "Location": "恆光橋下",
+        "Type": "無障礙",
+        "Latitude": "24.98085886",
+        "Longitude": "121.5674652",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "214",
+        "Location": "恆光橋下",
+        "Type": "一般型",
+        "Latitude": "24.98085665",
+        "Longitude": "121.5674879",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "215",
+        "Location": "一壽橋旁上游20公尺處",
+        "Type": "一般型",
+        "Latitude": "24.97697229",
+        "Longitude": "121.5568925",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "216",
+        "Location": "寶橋下",
+        "Type": "一般型",
+        "Latitude": "24.97984091",
+        "Longitude": "121.5536702",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "217",
+        "Location": "籃球場旁",
+        "Type": "一般型",
+        "Latitude": "24.98400987",
+        "Longitude": "121.5453374",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "218",
+        "Location": "北新橋旁下游",
+        "Type": "無障礙",
+        "Latitude": "24.98830493",
+        "Longitude": "121.5393806",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "219",
+        "Location": "北新橋旁下游",
+        "Type": "一般型",
+        "Latitude": "24.98831564",
+        "Longitude": "121.5393808",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "220",
+        "Location": "北新橋旁下游",
+        "Type": "一般型",
+        "Latitude": "24.98832697",
+        "Longitude": "121.5393808",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "221",
+        "Location": "育英疏散門下游網球場旁與溜冰場間",
+        "Type": "一般型",
+        "Latitude": "24.99030821",
+        "Longitude": "121.5365781",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "222",
+        "Location": "第2座(上游側)壘球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.0006201",
+        "Longitude": "121.5351213",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "223",
+        "Location": "第1座(上游側)壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.00209684",
+        "Longitude": "121.5352692",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "224",
+        "Location": "福和橋下",
+        "Type": "無障礙",
+        "Latitude": "25.00864657",
+        "Longitude": "121.5327581",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "225",
+        "Location": "福和橋下",
+        "Type": "一般型",
+        "Latitude": "25.00867862",
+        "Longitude": "121.5327261",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "226",
+        "Location": "上游網球場旁",
+        "Type": "一般型",
+        "Latitude": "25.01989781",
+        "Longitude": "121.5207538",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "227",
+        "Location": "中正橋下游約201公尺跨堤行人陸橋下",
+        "Type": "一般型",
+        "Latitude": "25.02376199",
+        "Longitude": "121.5144976",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "228",
+        "Location": "馬場町疏散門上游約100公尺臨河岸側",
+        "Type": "一般型",
+        "Latitude": "25.02077198",
+        "Longitude": "121.5066465",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "229",
+        "Location": "馬場町與華中水防道路交界",
+        "Type": "一般型",
+        "Latitude": "25.01836198",
+        "Longitude": "121.5022726",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "230",
+        "Location": "自行車道5.5公里附近",
+        "Type": "無障礙",
+        "Latitude": "25.01575502",
+        "Longitude": "121.5006878",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "231",
+        "Location": "華中橋下游自行車練習場旁",
+        "Type": "一般型",
+        "Latitude": "25.01224767",
+        "Longitude": "121.4951198",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "232",
+        "Location": "華中橋下游壘球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.01593346",
+        "Longitude": "121.4951951",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "233",
+        "Location": "華中橋下游壘球場旁",
+        "Type": "一般型",
+        "Latitude": "25.0159236",
+        "Longitude": "121.4951926",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "234",
+        "Location": "華中橋下游網球場旁",
+        "Type": "無障礙",
+        "Latitude": "25.01655657",
+        "Longitude": "121.4915161",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "235",
+        "Location": "華中橋下游網球場與籃球場間",
+        "Type": "一般型",
+        "Latitude": "25.01697033",
+        "Longitude": "121.4923368",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "236",
+        "Location": "光復橋上游足球場旁",
+        "Type": "一般型",
+        "Latitude": "25.0217545",
+        "Longitude": "121.4910264",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "237",
+        "Location": "光復橋下",
+        "Type": "無障礙",
+        "Latitude": "25.02422857",
+        "Longitude": "121.4902563",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "238",
+        "Location": "光復橋下",
+        "Type": "一般型",
+        "Latitude": "25.02422857",
+        "Longitude": "121.4902563",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "239",
+        "Location": "華翠橋下游旁",
+        "Type": "一般型",
+        "Latitude": "25.02765331",
+        "Longitude": "121.4885922",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "240",
+        "Location": "貴陽疏散門前方",
+        "Type": "一般型",
+        "Latitude": "25.04139652",
+        "Longitude": "121.498386",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "241",
+        "Location": "永福橋停車場旁",
+        "Type": "景觀",
+        "Latitude": "25.01442693",
+        "Longitude": "121.5260813",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "242",
+        "Location": "永福橋停車場旁",
+        "Type": "景觀",
+        "Latitude": "25.01445213",
+        "Longitude": "121.5260646",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "243",
+        "Location": "永福橋停車場旁",
+        "Type": "景觀",
+        "Latitude": "25.01447435",
+        "Longitude": "121.5260507",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "244",
+        "Location": "永福橋停車場旁",
+        "Type": "景觀",
+        "Latitude": "25.01449658",
+        "Longitude": "121.5260312",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "245",
+        "Location": "永福橋停車場旁",
+        "Type": "景觀",
+        "Latitude": "25.01451324",
+        "Longitude": "121.5260229",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "246",
+        "Location": "大稻埕碼頭廣場",
+        "Type": "景觀",
+        "Latitude": "25.05719074",
+        "Longitude": "121.5079608",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "247",
+        "Location": "大稻埕碼頭廣場",
+        "Type": "景觀",
+        "Latitude": "25.05716852",
+        "Longitude": "121.5079553",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "248",
+        "Location": "大稻埕碼頭廣場",
+        "Type": "景觀",
+        "Latitude": "25.05714609",
+        "Longitude": "121.5079536",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "249",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.05575463",
+        "Longitude": "121.5076358",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "250",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.05575463",
+        "Longitude": "121.5076081",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "251",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.05576019",
+        "Longitude": "121.5075803",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "252",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.0557713",
+        "Longitude": "121.5075581",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "253",
+        "Location": "自行車租借站旁",
+        "Type": "景觀",
+        "Latitude": "25.05576852",
+        "Longitude": "121.5075414",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "254",
+        "Location": "延平宮旁",
+        "Type": "景觀",
+        "Latitude": "25.054255",
+        "Longitude": "121.5072817",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "255",
+        "Location": "延平宮旁",
+        "Type": "景觀",
+        "Latitude": "25.05421334",
+        "Longitude": "121.5072706",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "256",
+        "Location": "延平宮旁",
+        "Type": "景觀",
+        "Latitude": "25.05411889",
+        "Longitude": "121.5072567",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "257",
+        "Location": "延平宮旁",
+        "Type": "景觀",
+        "Latitude": "25.05409111",
+        "Longitude": "121.5072456",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "258",
+        "Location": "福安河濱公園",
+        "Type": "一般型",
+        "Latitude": "25.09462984",
+        "Longitude": "121.4951658",
+        "for_the_Disabled": ""
+      },
+      {
+        "_id": "259",
+        "Location": "天水宮旁",
+        "Type": "一般型",
+        "Latitude": "25.05778439",
+        "Longitude": "121.5082323",
+        "for_the_Disabled": ""
+      }
+    ]
+  }
+}
