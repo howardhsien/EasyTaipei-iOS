@@ -228,7 +228,7 @@
 				TargetAttributes = {
 					64CA7EB81D2B58A6009DDB9A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3C336QTYA6;
+						DevelopmentTeam = 26F3DGXKAT;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -458,9 +458,10 @@
 			baseConfigurationReference = 18B673F2D094DB632EE399AB /* Pods-EasyTaipei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sarah Lee (7Y8BMB93TL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sarah Lee (7Y8BMB93TL)";
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,9 +474,10 @@
 			baseConfigurationReference = 7B84880BB6666F82079682A2 /* Pods-EasyTaipei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NianHua Lee (26F3DGXKAT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NianHua Lee (26F3DGXKAT)";
 				INFOPLIST_FILE = EasyTaipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sirius.EasyTaipei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
