@@ -29,6 +29,8 @@
 		64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7F1A1D2E5588009DDB9A /* LandingPageViewController.swift */; };
 		64CA7F1D1D2E9DC0009DDB9A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7F1C1D2E9DC0009DDB9A /* MenuCell.swift */; };
 		6B554701DBDE142BF1A6B1D2 /* Pods_EasyTaipei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */; };
+		F961C5C61D7482830059BD33 /* mrtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F961C5C41D7482830059BD33 /* mrtView.xib */; };
+		F961C5C71D7482830059BD33 /* mrtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5C51D7482830059BD33 /* mrtView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		64CA7F1A1D2E5588009DDB9A /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		64CA7F1C1D2E9DC0009DDB9A /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		7B84880BB6666F82079682A2 /* Pods-EasyTaipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.release.xcconfig"; sourceTree = "<group>"; };
+		F961C5C41D7482830059BD33 /* mrtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtView.xib; sourceTree = "<group>"; };
+		F961C5C51D7482830059BD33 /* mrtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 				64CA7F001D2C0420009DDB9A /* MenuBar.swift */,
 				64CA7F161D2D87D2009DDB9A /* TabButtonView.xib */,
 				64CA7F181D2DF18E009DDB9A /* TabButtonView.swift */,
+				F961C5C41D7482830059BD33 /* mrtView.xib */,
+				F961C5C51D7482830059BD33 /* mrtView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				64CA7F171D2D87D2009DDB9A /* TabButtonView.xib in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
+				F961C5C61D7482830059BD33 /* mrtView.xib in Resources */,
 				64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +322,7 @@
 			files = (
 				64CA7ED51D2B5DCF009DDB9A /* MRTViewController.swift in Sources */,
 				64CA7F0D1D2C2D64009DDB9A /* UIColor+ESYAdditions.swift in Sources */,
+				F961C5C71D7482830059BD33 /* mrtView.swift in Sources */,
 				64CA7F1D1D2E9DC0009DDB9A /* MenuCell.swift in Sources */,
 				64CA7EDF1D2BB9EE009DDB9A /* TabBarController.swift in Sources */,
 				64CA7EDB1D2B5FF9009DDB9A /* MapViewController.swift in Sources */,
