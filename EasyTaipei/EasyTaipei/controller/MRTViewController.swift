@@ -77,7 +77,7 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         scrollView.addGestureRecognizer(doubleTap)
         
         //oneTap for location
-        let oneTap = UITapGestureRecognizer(target: self, action: #selector(oneTapAction))
+        let oneTap = UITapGestureRecognizer(target: self, action: #selector(handleOneTap))
         oneTap.numberOfTapsRequired = 1
         scrollView.addGestureRecognizer(oneTap)
     }
@@ -173,7 +173,7 @@ extension MRTViewController {
     }
     
     //show coordinates of stations
-    func oneTapAction(recognizer:UITapGestureRecognizer){
+    func handleOneTap(recognizer:UITapGestureRecognizer){
         //Log Clicked Location
         let tapPoint = recognizer.locationInView(mrtView)
         print(tapPoint)
@@ -181,7 +181,6 @@ extension MRTViewController {
     }
     
     func EstimatedArrivalTimer(sender: UIButton!){
-        print("EstimatedArrivalTimer")
         sender.backgroundColor = .greenColor()
         
         if buttonTagSelected.count < 2 {
