@@ -202,12 +202,10 @@ extension MRTViewController {
         }
         
         if buttonTagSelected.count == 2 {
-            showEstimatedArrivalTime()
+            getEstimatedArrivalTimeData(buttonTagSelected[0].currentTitle!, station2: buttonTagSelected[1].currentTitle!)
         }
     }
     
-    func showEstimatedArrivalTime() {
-    }
     
     func cleanButton() {
         for button in buttonTagSelected {
@@ -238,12 +236,11 @@ extension MRTViewController {
     }
     
     private func readJSONObject(JSONObject: [String: AnyObject]) {
-        var timeDataCount = 0
         
         for (station,stationData) in JSONObject {
             guard let stationData = stationData as? [String: [String: String]] else {return}
             for (_, destinationAndTime) in stationData {
-                timeDataCount += 1
+                
                 let time = Double(destinationAndTime["timeSpent"]!)
                 //insert to coredata
                 EstimatedArrivalTime.insert(
@@ -254,16 +251,19 @@ extension MRTViewController {
                 )
             }
         }
-        
-        print("timeDataCount: \(timeDataCount)")
+        _ = try? managedObjectContext!.save()
     }
 
     
-    func getEstimatedArrivalTimeData() {
-        let request = NSFetchRequest(entityName: "EstimatedArrivalTime")
-        request.fetchBatchSize = 1
-        request.fetchLimit = 3
+    func getEstimatedArrivalTimeData(station1: String, station2: String) {
+        let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
+        //requestForEstimatedArrivalTime.fetchBatchSize = 1
+        //requestForEstimatedArrivalTime.fetchLimit = 3
+        //requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
         
+        guard let data = try? managedObjectContext?.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
+        print("data count: \(data.count)")
+        //print("time: \(data.first?.time)")
     }
     
 }

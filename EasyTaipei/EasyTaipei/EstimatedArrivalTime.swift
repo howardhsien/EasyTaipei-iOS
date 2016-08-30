@@ -13,7 +13,6 @@ import CoreData
 class EstimatedArrivalTime: NSManagedObject {
 
     class func insert(station1: String, station2: String, time: Double, context: NSManagedObjectContext) {
-        
         guard let estimatedArrivalTime = NSEntityDescription.insertNewObjectForEntityForName("EstimatedArrivalTime", inManagedObjectContext: context) as? EstimatedArrivalTime else {return}
         
         context.performBlock {
@@ -22,7 +21,5 @@ class EstimatedArrivalTime: NSManagedObject {
             estimatedArrivalTime.station2 = station2
             estimatedArrivalTime.time = time
         }
-        
     }
-
 }
