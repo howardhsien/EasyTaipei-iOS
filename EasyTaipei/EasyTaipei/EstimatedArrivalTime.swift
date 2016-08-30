@@ -12,6 +12,17 @@ import CoreData
 
 class EstimatedArrivalTime: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    class func insert(station1: String, station2: String, time: Double, context: NSManagedObjectContext) {
+        
+        guard let estimatedArrivalTime = NSEntityDescription.insertNewObjectForEntityForName("EstimatedArrivalTime", inManagedObjectContext: context) as? EstimatedArrivalTime else {return}
+        
+        context.performBlock {
+            
+            estimatedArrivalTime.station1 = station1
+            estimatedArrivalTime.station2 = station2
+            estimatedArrivalTime.time = time
+        }
+        
+    }
 
 }

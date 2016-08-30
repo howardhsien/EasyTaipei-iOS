@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class MRTViewController: UIViewController,UIScrollViewDelegate {
 //ScrollView image viewer
     
+    //-------------------------------data-------------------------------------
+    private var managedObjectContext: NSManagedObjectContext? =
+        (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+    
     private var buttonTagSelected = [UIButton]()
+    
+    //------------------------------------------------------------------------
     
     private lazy var scrollView:UIScrollView = {
         let sv = UIScrollView(frame: self.view.bounds)
@@ -49,7 +56,10 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         setupScrollView()
         setZoomScale()
         setupGestureRecognizer()
+        
+        //Chris
         buttonIteration()
+        parseEstimatedArrivalTimeJSON()
         
     }
     //MARK: ScrollView
@@ -212,24 +222,50 @@ extension MRTViewController {
 //coredata
 extension MRTViewController {
     
-    func removeData () {
-        // Remove the existing data
-        if let managedObjectContext = self.managedObjectContext {
-            let fetchRequest = NSFetchRequest(entityName: "MenuItem")
-            var e: NSError?
-            let menuItems = managedObjectContext.executeFetchRequest(fetchRequest, error: &e) as! [MenuItem]
+    private func parseEstimatedArrivalTimeJSON(){
+        
+        let url = NSBundle.mainBundle().URLForResource("EstimatedArrivalTime", withExtension: "json")
+        let data = NSData(contentsOfURL: url!)
+        
+        do {
+            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+            guard let JSONObject = object as? [String: AnyObject] else {return}
+            readJSONObject(JSONObject)
             
-            if e != nil {
-                print("Failed to retrieve record: \(e!.localizedDescription)")
-                
-            } else {
-                
-                for menuItem in menuItems {
-                    managedObjectContext.deleteObject(menuItem)
-                }
-            }
+        } catch {
+            // Handle Error
         }
     }
+    
+    private func readJSONObject(JSONObject: [String: AnyObject]) {
+        var timeDataCount = 0
+        
+        for (station,stationData) in JSONObject {
+            guard let stationData = stationData as? [String: [String: String]] else {return}
+            for (_, destinationAndTime) in stationData {
+                timeDataCount += 1
+                let time = Double(destinationAndTime["timeSpent"]!)
+                //insert to coredata
+                EstimatedArrivalTime.insert(
+                    station,
+                    station2: destinationAndTime["destination"]!,
+                    time: time!,
+                    context: managedObjectContext!
+                )
+            }
+        }
+        
+        print("timeDataCount: \(timeDataCount)")
+    }
+
+    
+    func getEstimatedArrivalTimeData() {
+        let request = NSFetchRequest(entityName: "EstimatedArrivalTime")
+        request.fetchBatchSize = 1
+        request.fetchLimit = 3
+        
+    }
+    
 }
 
 
