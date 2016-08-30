@@ -31,6 +31,9 @@
 		6B554701DBDE142BF1A6B1D2 /* Pods_EasyTaipei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */; };
 		F961C5C61D7482830059BD33 /* mrtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F961C5C41D7482830059BD33 /* mrtView.xib */; };
 		F961C5C71D7482830059BD33 /* mrtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5C51D7482830059BD33 /* mrtView.swift */; };
+		F961C5CB1D7485C50059BD33 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */; };
+		F961C5D61D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */; };
+		F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		7B84880BB6666F82079682A2 /* Pods-EasyTaipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.release.xcconfig"; sourceTree = "<group>"; };
 		F961C5C41D7482830059BD33 /* mrtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtView.xib; sourceTree = "<group>"; };
 		F961C5C51D7482830059BD33 /* mrtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtView.swift; sourceTree = "<group>"; };
+		F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EstimatedArrivalTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimatedArrivalTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		64CA7EBB1D2B58A6009DDB9A /* EasyTaipei */ = {
 			isa = PBXGroup;
 			children = (
+				F961C5C81D7485910059BD33 /* coredata */,
 				64CA7ECE1D2B5CB9009DDB9A /* controller */,
 				64CA7ECF1D2B5CB9009DDB9A /* helper */,
 				64CA7ED01D2B5CB9009DDB9A /* model */,
@@ -188,6 +195,16 @@
 				085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F961C5C81D7485910059BD33 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */,
+				F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */,
+				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
+			);
+			name = coredata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +352,12 @@
 				64CA7F151D2D690A009DDB9A /* CustomMKPointAnnotation.swift in Sources */,
 				64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */,
 				64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */,
+				F961C5D61D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift in Sources */,
 				64CA7F051D2C0560009DDB9A /* Extensions.swift in Sources */,
 				64CA7ED91D2B5FDD009DDB9A /* ToiletViewController.swift in Sources */,
+				F961C5CB1D7485C50059BD33 /* Model.xcdatamodeld in Sources */,
 				64CA7F0F1D2CCFA8009DDB9A /* HitTest.swift in Sources */,
+				F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +521,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */,
+			);
+			currentVersion = F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 64CA7EB11D2B58A6009DDB9A /* Project object */;
 }

@@ -207,3 +207,31 @@ extension MRTViewController {
     }
 }
 
+
+
+//coredata
+extension MRTViewController {
+    
+    func removeData () {
+        // Remove the existing data
+        if let managedObjectContext = self.managedObjectContext {
+            let fetchRequest = NSFetchRequest(entityName: "MenuItem")
+            var e: NSError?
+            let menuItems = managedObjectContext.executeFetchRequest(fetchRequest, error: &e) as! [MenuItem]
+            
+            if e != nil {
+                print("Failed to retrieve record: \(e!.localizedDescription)")
+                
+            } else {
+                
+                for menuItem in menuItems {
+                    managedObjectContext.deleteObject(menuItem)
+                }
+            }
+        }
+    }
+}
+
+
+
+

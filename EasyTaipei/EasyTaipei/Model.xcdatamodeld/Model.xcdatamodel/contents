@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="EstimatedArrivalTime" representedClassName=".EstimatedArrivalTime" syncable="YES">
+        <attribute name="station1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EstimatedArrivalTime" positionX="-45" positionY="0" width="128" height="90"/>
+    </elements>
+</model>
