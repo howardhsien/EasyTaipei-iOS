@@ -13,11 +13,23 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    //private var managedObjectContext: NSManagedObjectContext? =
+        //(UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //preload data for when first time in use
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let isPreloaded = defaults.boolForKey("isPreloaded")
+        if !isPreloaded {
+            preloadData()
+            defaults.setBool(true, forKey: "isPreloaded")
+        }
+        
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         return true
     }
 
@@ -107,6 +119,65 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+    // MARK: - Preload to Core Data
+    
+    private func preloadData(){
+        
+        removeData()
+        
+        let url = NSBundle.mainBundle().URLForResource("EstimatedArrivalTime", withExtension: "json")
+        let data = NSData(contentsOfURL: url!)
+        
+        do {
+            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+            guard let JSONObject = object as? [String: AnyObject] else {return}
+            readJSONObject(JSONObject)
+            
+        } catch {
+            // Handle Error
+        }
+    }
+    
+    private func readJSONObject(JSONObject: [String: AnyObject]) {
+        
+        for (station,stationData) in JSONObject {
+            guard let stationData = stationData as? [String: [String: String]] else {return}
+            for (_, destinationAndTime) in stationData {
+                let time = Double(destinationAndTime["timeSpent"]!)
+                //insert to coredata
+                EstimatedArrivalTime.insert(
+                    station,
+                    station2: destinationAndTime["destination"]!,
+                    time: time!,
+                    context: managedObjectContext
+                )
+                //print("loading data: \(station), \(destinationAndTime["destination"]!), \(time!)")
+            }
+        }
+        do {
+            try managedObjectContext.save()
+        } catch {
+            print("error saving")
+        }
+        
+    }
+    
+    func removeData() {
+        let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
+        
+        guard var estimatedArrivalTimeData = try? managedObjectContext.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
+        if estimatedArrivalTimeData.count > 0 {
+            for data in estimatedArrivalTimeData {
+                managedObjectContext.deleteObject(data)
+                print("deleting data")
+            }
+        }
+        estimatedArrivalTimeData.removeAll(keepCapacity: false)
+        _ = try? managedObjectContext.save()
+    }
+
     
 }
 

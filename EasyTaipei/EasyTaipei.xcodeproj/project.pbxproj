@@ -114,7 +114,7 @@
 		64CA7EBB1D2B58A6009DDB9A /* EasyTaipei */ = {
 			isa = PBXGroup;
 			children = (
-				F961C5C81D7485910059BD33 /* coredata */,
+				F961C5C81D7485910059BD33 /* MRT data */,
 				64CA7ECE1D2B5CB9009DDB9A /* controller */,
 				64CA7ECF1D2B5CB9009DDB9A /* helper */,
 				64CA7ED11D2B5CB9009DDB9A /* resource */,
@@ -191,7 +191,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F961C5C81D7485910059BD33 /* coredata */ = {
+		F961C5C81D7485910059BD33 /* MRT data */ = {
 			isa = PBXGroup;
 			children = (
 				F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */,
@@ -199,7 +199,7 @@
 				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
 				F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */,
 			);
-			name = coredata;
+			name = "MRT data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

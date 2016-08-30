@@ -13,8 +13,7 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
 //ScrollView image viewer
     
     //-------------------------------data-------------------------------------
-    private var managedObjectContext: NSManagedObjectContext? =
-        (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+    
     
     private var buttonTagSelected = [UIButton]()
     
@@ -59,8 +58,6 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         
         //Chris
         buttonIteration()
-        parseEstimatedArrivalTimeJSON()
-        
     }
     //MARK: ScrollView
     private func setupScrollView(){
@@ -213,60 +210,32 @@ extension MRTViewController {
         }
         buttonTagSelected = []
     }
-}
-
-
-
-//coredata
-extension MRTViewController {
-    
-    private func parseEstimatedArrivalTimeJSON(){
-        
-        let url = NSBundle.mainBundle().URLForResource("EstimatedArrivalTime", withExtension: "json")
-        let data = NSData(contentsOfURL: url!)
-        
-        do {
-            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-            guard let JSONObject = object as? [String: AnyObject] else {return}
-            readJSONObject(JSONObject)
-            
-        } catch {
-            // Handle Error
-        }
-    }
-    
-    private func readJSONObject(JSONObject: [String: AnyObject]) {
-        
-        for (station,stationData) in JSONObject {
-            guard let stationData = stationData as? [String: [String: String]] else {return}
-            for (_, destinationAndTime) in stationData {
-                
-                let time = Double(destinationAndTime["timeSpent"]!)
-                //insert to coredata
-                EstimatedArrivalTime.insert(
-                    station,
-                    station2: destinationAndTime["destination"]!,
-                    time: time!,
-                    context: managedObjectContext!
-                )
-            }
-        }
-        _ = try? managedObjectContext!.save()
-    }
-
     
     func getEstimatedArrivalTimeData(station1: String, station2: String) {
+        let managedObjectContext: NSManagedObjectContext? =
+            (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+        
         let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
         //requestForEstimatedArrivalTime.fetchBatchSize = 1
         //requestForEstimatedArrivalTime.fetchLimit = 3
         //requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
         
-        guard let data = try? managedObjectContext?.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
-        print("data count: \(data.count)")
-        //print("time: \(data.first?.time)")
+        guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
+        print("total data: \(estimatedArrivalTimeData.count)")
+        
+        for n in 0...9 {
+            print("estimatedArrivalTimeData: \(estimatedArrivalTimeData[n])")
+        }
+        
+        
+        
+        
+        //print("\(estimatedArrivalTimeData.first?.station1) to \(estimatedArrivalTimeData.first?.station2) needs \(estimatedArrivalTimeData.first?.time) minute(s)")
     }
-    
 }
+
+
+
 
 
 
