@@ -36,6 +36,8 @@
 		F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */; };
 		F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */; };
 		F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */; };
+		F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */; };
+		F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimatedArrivalTime.swift; sourceTree = "<group>"; };
 		F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EstimatedArrivalTime.json; sourceTree = "<group>"; };
 		F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MRTButtonCoordinates.json; sourceTree = "<group>"; };
+		F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRTButtonCoordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTButtonCoordinates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,8 @@
 		F961C5C81D7485910059BD33 /* MRT data */ = {
 			isa = PBXGroup;
 			children = (
+				F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */,
+				F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */,
 				F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */,
 				F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */,
 				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
@@ -348,6 +354,7 @@
 				64CA7F141D2D690A009DDB9A /* CustomAnnotationView.swift in Sources */,
 				64CA7F031D2C046B009DDB9A /* BaseCell.swift in Sources */,
 				64CA7F011D2C0420009DDB9A /* MenuBar.swift in Sources */,
+				F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */,
 				64CA7F191D2DF18E009DDB9A /* TabButtonView.swift in Sources */,
 				64CA7F151D2D690A009DDB9A /* CustomMKPointAnnotation.swift in Sources */,
 				64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */,
@@ -356,6 +363,7 @@
 				64CA7F051D2C0560009DDB9A /* Extensions.swift in Sources */,
 				64CA7ED91D2B5FDD009DDB9A /* ToiletViewController.swift in Sources */,
 				F961C5CB1D7485C50059BD33 /* Model.xcdatamodeld in Sources */,
+				F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */,
 				64CA7F0F1D2CCFA8009DDB9A /* HitTest.swift in Sources */,
 				F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */,
 			);

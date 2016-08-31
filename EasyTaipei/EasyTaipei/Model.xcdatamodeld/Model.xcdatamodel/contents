@@ -5,7 +5,12 @@
         <attribute name="station2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
+    <entity name="MRTButtonCoordinates" representedClassName=".MRTButtonCoordinates" syncable="YES">
+        <attribute name="coordinatesString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="EstimatedArrivalTime" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="EstimatedArrivalTime" positionX="-45" positionY="0" width="128" height="88"/>
+        <element name="MRTButtonCoordinates" positionX="-18" positionY="54" width="128" height="75"/>
     </elements>
 </model>

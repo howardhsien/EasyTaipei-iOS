@@ -23,10 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = NSUserDefaults.standardUserDefaults()
         let isPreloaded = defaults.boolForKey("isPreloaded")
         if !isPreloaded {
-            loadEstimatedArrivalTimeJSON()
+            preloadData()
             defaults.setBool(true, forKey: "isPreloaded")
         }
-        preloadMRTButtonCoordinates()
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
@@ -123,9 +122,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Preload to Core Data
     
+    private func preloadData(){
+        loadEstimatedArrivalTimeJSON()
+        loadMRTButtonCoordinates()
+    }
+    
     private func loadEstimatedArrivalTimeJSON(){
         
-        removeData()
+        removeEstimatedArrivalTimeData()
         
         let url = NSBundle.mainBundle().URLForResource("EstimatedArrivalTime", withExtension: "json")
         let data = NSData(contentsOfURL: url!)
@@ -160,7 +164,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = try? managedObjectContext.save()
     }
     
-    private func removeData() {
+    private func removeEstimatedArrivalTimeData() {
         let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
         
         guard var estimatedArrivalTimeData = try? managedObjectContext.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
@@ -175,8 +179,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Removing data before preload, this should not happend")
     }
     
-    private func preloadMRTButtonCoordinates(){
-                
+    private func loadMRTButtonCoordinates(){
+        
+        removeMRTButtonCoordinatesData()
+        
         let url = NSBundle.mainBundle().URLForResource("MRTButtonCoordinates", withExtension: "json")
         let data = NSData(contentsOfURL: url!)
         
@@ -192,17 +198,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func readMRTButtonCoordinatesJSON(JSONObject: [String:String]) {
         
-        
         for (station, coordinate) in JSONObject {
-            print("station: \(station), coordinate: \(coordinate)")
+            MRTButtonCoordinates.insert(station, coordinatesString: coordinate, context: managedObjectContext)
         }
-
-        
-        //_ = try? managedObjectContext.save()
+        _ = try? managedObjectContext.save()
     }
-
-
     
+    private func removeMRTButtonCoordinatesData() {
+        let requestForMRTButtonCoordinates = NSFetchRequest(entityName: "MRTButtonCoordinates")
+        
+        guard var mrtButtonCoordinates = try? managedObjectContext.executeFetchRequest(requestForMRTButtonCoordinates) as! [MRTButtonCoordinates] else {return}
+        if mrtButtonCoordinates.count > 0 {
+            for data in mrtButtonCoordinates {
+                managedObjectContext.deleteObject(data)
+            }
+        }
+        mrtButtonCoordinates.removeAll(keepCapacity: false)
+        _ = try? managedObjectContext.save()
+        
+        print("Removing data before preload, this should not happend")
+    }
 }
 
 
