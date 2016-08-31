@@ -177,7 +177,10 @@ extension MRTViewController {
     //show coordinates of stations
     func handleOneTap(recognizer:UITapGestureRecognizer){
         //Log Clicked Location
-        let tapPoint = recognizer.locationInView(mrtView)
+        var tapPoint = "\(recognizer.locationInView(mrtView))"
+        tapPoint = tapPoint.stringByReplacingOccurrencesOfString("(", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        tapPoint = tapPoint.stringByReplacingOccurrencesOfString(")", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
         print(tapPoint)
         cleanButton()
     }
