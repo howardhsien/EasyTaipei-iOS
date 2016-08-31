@@ -12,12 +12,7 @@ import CoreData
 class MRTViewController: UIViewController,UIScrollViewDelegate {
 //ScrollView image viewer
     
-    //-------------------------------data-------------------------------------
-    
-    
     private var buttonTagSelected = [UIButton]()
-    
-    //------------------------------------------------------------------------
     
     private lazy var scrollView:UIScrollView = {
         let sv = UIScrollView(frame: self.view.bounds)
@@ -216,21 +211,13 @@ extension MRTViewController {
             (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
         
         let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
-        //requestForEstimatedArrivalTime.fetchBatchSize = 1
-        //requestForEstimatedArrivalTime.fetchLimit = 3
-        //requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
+        requestForEstimatedArrivalTime.fetchBatchSize = 1
+        requestForEstimatedArrivalTime.fetchLimit = 3
+        requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
         
         guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
-        print("total data: \(estimatedArrivalTimeData.count)")
         
-        for n in 0...9 {
-            print("estimatedArrivalTimeData: \(estimatedArrivalTimeData[n])")
-        }
-        
-        
-        
-        
-        //print("\(estimatedArrivalTimeData.first?.station1) to \(estimatedArrivalTimeData.first?.station2) needs \(estimatedArrivalTimeData.first?.time) minute(s)")
+        print("\(estimatedArrivalTimeData.first?.station1) to \(estimatedArrivalTimeData.first?.station2) needs \(estimatedArrivalTimeData.first?.time) minute(s)")
     }
 }
 

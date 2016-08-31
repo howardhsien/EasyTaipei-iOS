@@ -156,12 +156,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //print("loading data: \(station), \(destinationAndTime["destination"]!), \(time!)")
             }
         }
-        do {
-            try managedObjectContext.save()
-        } catch {
-            print("error saving")
-        }
         
+        _ = try? managedObjectContext.save()
     }
     
     func removeData() {
@@ -171,11 +167,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if estimatedArrivalTimeData.count > 0 {
             for data in estimatedArrivalTimeData {
                 managedObjectContext.deleteObject(data)
-                print("deleting data")
             }
         }
         estimatedArrivalTimeData.removeAll(keepCapacity: false)
         _ = try? managedObjectContext.save()
+        
+        print("Removing data before preload, this should not happend")
     }
 
     
