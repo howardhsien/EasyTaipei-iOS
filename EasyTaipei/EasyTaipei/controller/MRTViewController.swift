@@ -146,42 +146,42 @@ extension MRTViewController {
     //add button
     func buttonIteration(){
         
-        let stationLocation = [
-            "中山":"{164.0, 317.666656494141}",
-            "雙連":"{163.666656494141, 294.0}",
-            "民權西路":"{163.666656494141, 271.33332824707}",
-            "圓山":"{163.0, 246.666656494141}",
-            "劍潭":"{163.0, 224.0}",
-            "士林":"{162.666656494141, 204.666656494141}",
-            "芝山":"{163.33332824707, 185.33332824707}",
-            "明德":"{163.33332824707, 163.33332824707}"
-        ]
+//        let stationLocation = [
+//            "中山":"{164.0, 317.666656494141}",
+//            "雙連":"{163.666656494141, 294.0}",
+//            "民權西路":"{163.666656494141, 271.33332824707}",
+//            "圓山":"{163.0, 246.666656494141}",
+//            "劍潭":"{163.0, 224.0}",
+//            "士林":"{162.666656494141, 204.666656494141}",
+//            "芝山":"{163.33332824707, 185.33332824707}",
+//            "明德":"{163.33332824707, 163.33332824707}"
+//        ]
         
         
         
-        for (station, coordinate) in stationLocation {
-            let button = UIButton(type: .System)
-            button.center = CGPointFromString(coordinate)
-            button.bounds = CGRect(x: 0,y: 0,width: 9,height: 9)
-            button.backgroundColor = .redColor()
-            button.alpha = 0.6
-            button.addTarget(self, action: #selector(MRTViewController.EstimatedArrivalTimer(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-            
-            button.setTitle(station, forState: UIControlState.Normal)
-            button.tintColor = .clearColor()
-            
-            mrtView.addSubview(button)
-        }
+//        for (station, coordinate) in stationLocation {
+//            let button = UIButton(type: .System)
+//            button.center = CGPointFromString(coordinate)
+//            button.bounds = CGRect(x: 0,y: 0,width: 9,height: 9)
+//            button.backgroundColor = .redColor()
+//            button.alpha = 0.6
+//            button.addTarget(self, action: #selector(MRTViewController.EstimatedArrivalTimer(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+//            
+//            button.setTitle(station, forState: UIControlState.Normal)
+//            button.tintColor = .clearColor()
+//            
+//            mrtView.addSubview(button)
+//        }
     }
     
     //show coordinates of stations
     func handleOneTap(recognizer:UITapGestureRecognizer){
         //Log Clicked Location
-        var tapPoint = "\(recognizer.locationInView(mrtView))"
-        tapPoint = tapPoint.stringByReplacingOccurrencesOfString("(", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        tapPoint = tapPoint.stringByReplacingOccurrencesOfString(")", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        
-        print(tapPoint)
+//        var tapPoint = "\(recognizer.locationInView(mrtView))"
+//        tapPoint = tapPoint.stringByReplacingOccurrencesOfString("(", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+//        tapPoint = tapPoint.stringByReplacingOccurrencesOfString(")", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+//        
+//        print(tapPoint)
         cleanButton()
     }
     

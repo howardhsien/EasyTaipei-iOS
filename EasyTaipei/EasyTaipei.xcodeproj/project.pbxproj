@@ -35,6 +35,7 @@
 		F961C5D61D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */; };
 		F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */; };
 		F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */; };
+		F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EstimatedArrivalTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimatedArrivalTime.swift; sourceTree = "<group>"; };
 		F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EstimatedArrivalTime.json; sourceTree = "<group>"; };
+		F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MRTButtonCoordinates.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */,
 				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
 				F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */,
+				F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */,
 			);
 			name = "MRT data";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
 				F961C5C61D7482830059BD33 /* mrtView.xib in Resources */,
+				F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */,
 				64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

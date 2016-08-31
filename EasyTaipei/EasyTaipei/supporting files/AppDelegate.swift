@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = NSUserDefaults.standardUserDefaults()
         let isPreloaded = defaults.boolForKey("isPreloaded")
         if !isPreloaded {
-            preloadData()
+            loadEstimatedArrivalTimeJSON()
             defaults.setBool(true, forKey: "isPreloaded")
         }
-        
+        preloadMRTButtonCoordinates()
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
@@ -123,7 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Preload to Core Data
     
-    private func preloadData(){
+    private func loadEstimatedArrivalTimeJSON(){
         
         removeData()
         
@@ -133,14 +133,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
             guard let JSONObject = object as? [String: AnyObject] else {return}
-            readJSONObject(JSONObject)
+            readEstimatedArrivalTimeJSON(JSONObject)
             
         } catch {
             // Handle Error
         }
     }
     
-    private func readJSONObject(JSONObject: [String: AnyObject]) {
+    private func readEstimatedArrivalTimeJSON(JSONObject: [String: AnyObject]) {
         
         for (station,stationData) in JSONObject {
             guard let stationData = stationData as? [String: [String: String]] else {return}
@@ -160,7 +160,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = try? managedObjectContext.save()
     }
     
-    func removeData() {
+    private func removeData() {
         let requestForEstimatedArrivalTime = NSFetchRequest(entityName: "EstimatedArrivalTime")
         
         guard var estimatedArrivalTimeData = try? managedObjectContext.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
@@ -174,6 +174,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("Removing data before preload, this should not happend")
     }
+    
+    private func preloadMRTButtonCoordinates(){
+                
+        let url = NSBundle.mainBundle().URLForResource("MRTButtonCoordinates", withExtension: "json")
+        let data = NSData(contentsOfURL: url!)
+        
+        do {
+            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+            guard let JSONObject = object as? [String:String] else {return}
+            readMRTButtonCoordinatesJSON(JSONObject)
+            
+        } catch {
+            // Handle Error
+        }
+    }
+    
+    private func readMRTButtonCoordinatesJSON(JSONObject: [String:String]) {
+        
+        
+        for (station, coordinate) in JSONObject {
+            print("station: \(station), coordinate: \(coordinate)")
+        }
+
+        
+        //_ = try? managedObjectContext.save()
+    }
+
 
     
 }
