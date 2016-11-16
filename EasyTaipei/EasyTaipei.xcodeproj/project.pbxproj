@@ -38,6 +38,7 @@
 		F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */; };
 		F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */; };
 		F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */; };
+		F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MRTButtonCoordinates.json; sourceTree = "<group>"; };
 		F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRTButtonCoordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTButtonCoordinates.swift; sourceTree = "<group>"; };
+		F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtDetailPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				64CA7F181D2DF18E009DDB9A /* TabButtonView.swift */,
 				F961C5C41D7482830059BD33 /* mrtView.xib */,
 				F961C5C51D7482830059BD33 /* mrtView.swift */,
+				F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CA7F171D2D87D2009DDB9A /* TabButtonView.xib in Resources */,
+				F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */,
 				F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
