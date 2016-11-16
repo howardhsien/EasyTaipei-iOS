@@ -199,25 +199,32 @@ extension MRTViewController {
         sender.backgroundColor = .greenColor()
         
         if buttonTagSelected.count < 2 {
+            print("count<2: \(buttonTagSelected.count)")
+            
+            if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
             
         } else {
+            print("else: \(buttonTagSelected.count)")
             cleanButton()
+            
+            if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
         }
         
         if buttonTagSelected.count == 2 {
+            print("count==2: \(buttonTagSelected.count)")
             getEstimatedArrivalTimeData(buttonTagSelected[0].currentTitle!, station2: buttonTagSelected[1].currentTitle!)
         }
     }
     
     
     func cleanButton() {
+        mrtDetailPanel.hidden = true
         for button in buttonTagSelected {
             button.backgroundColor = .redColor()
         }
         buttonTagSelected = []
-        mrtDetailPanel.hidden = true
     }
     
     func getEstimatedArrivalTimeData(station1: String, station2: String) {
@@ -231,14 +238,28 @@ extension MRTViewController {
         
         guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
         
-        print("\(estimatedArrivalTimeData.first?.station1) to \(estimatedArrivalTimeData.first?.station2) needs \(estimatedArrivalTimeData.first?.time) minute(s)")
-        showDetailPanel((estimatedArrivalTimeData.first?.station1)!, station2: (estimatedArrivalTimeData.first?.station2)!, time: (estimatedArrivalTimeData.first?.time)!)
+        if estimatedArrivalTimeData.count == 0 {
+            //反向查詢，萬芳->動物園，變成動物園->萬芳
+            getEstimatedArrivalTimeData(station2, station2: station1)
+            return
+        }
+        
+        if estimatedArrivalTimeData.first?.station1 != nil &&
+        estimatedArrivalTimeData.first?.station2 != nil &&
+            estimatedArrivalTimeData.first?.time != nil {
+            
+            print("\(station1) to \(station2) needs \(time) minute(s)")
+            showDetailPanel((estimatedArrivalTimeData.first?.station1)!,
+                            station2: (estimatedArrivalTimeData.first?.station2)!,
+                            time: (estimatedArrivalTimeData.first?.time)!)
+        }
+        
     }
     
     func showDetailPanel(station1: String, station2: String, time: NSNumber){
-        mrtDetailPanel.hidden = false
         mrtDetailPanel.mrtRoute.text = "\(station1) <– –> \(station2)"
-        
+        mrtDetailPanel.estimatedArrivalTime.text = "行駛\(time)分鐘"
+        mrtDetailPanel.hidden = false
     }
 }
 
