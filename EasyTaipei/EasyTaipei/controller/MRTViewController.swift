@@ -14,6 +14,8 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
     
     private var buttonTagSelected = [UIButton]()
     
+    private let mrtDetailPanel: MRTDetailPanel = UINib(nibName: "mrtDetailPanel", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! MRTDetailPanel
+    
     private lazy var scrollView:UIScrollView = {
         let sv = UIScrollView(frame: self.view.bounds)
         sv.delegate = self
@@ -21,7 +23,7 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
     }()
     
     private lazy var mrtView: UIView = {
-        //should not use imageView as before; the button added on imageView will not respond.
+        //should not use imageView; the button added on imageView will not respond.
         if let mrtView = UIView.loadFromNibNamed("mrtView"){
             
             let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
@@ -41,6 +43,7 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
             return UIView()
         }
     }()
+    
 
     
     //MARK: LifeCycle
@@ -52,14 +55,21 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         setupGestureRecognizer()
         
         //Chris
+        mrtDetailPanel.hidden = true
         buttonIteration()
     }
+    
     //MARK: ScrollView
     private func setupScrollView(){
         scrollView.addSubview(mrtView)
         scrollView.maximumZoomScale = 4.0
         scrollView.minimumZoomScale = 1.0
         scrollView.contentSize = mrtView.frame.size
+        
+        //setup mrtDetailPanel
+        mrtDetailPanel.frame = CGRectMake(0, 0, mrtView.frame.size.width, 100)
+        mrtDetailPanel.hidden = true
+        scrollView.addSubview(mrtDetailPanel)
     }
     
     //handle the zooming
@@ -207,6 +217,7 @@ extension MRTViewController {
             button.backgroundColor = .redColor()
         }
         buttonTagSelected = []
+        mrtDetailPanel.hidden = true
     }
     
     func getEstimatedArrivalTimeData(station1: String, station2: String) {
@@ -221,6 +232,13 @@ extension MRTViewController {
         guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
         
         print("\(estimatedArrivalTimeData.first?.station1) to \(estimatedArrivalTimeData.first?.station2) needs \(estimatedArrivalTimeData.first?.time) minute(s)")
+        showDetailPanel((estimatedArrivalTimeData.first?.station1)!, station2: (estimatedArrivalTimeData.first?.station2)!, time: (estimatedArrivalTimeData.first?.time)!)
+    }
+    
+    func showDetailPanel(station1: String, station2: String, time: NSNumber){
+        mrtDetailPanel.hidden = false
+        mrtDetailPanel.mrtRoute.text = "\(station1) <– –> \(station2)"
+        
     }
 }
 

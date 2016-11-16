@@ -39,6 +39,7 @@
 		F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */; };
 		F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */; };
 		F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */; };
+		F9DA215F1DDC38D000DC22BD /* mrtDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRTButtonCoordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTButtonCoordinates.swift; sourceTree = "<group>"; };
 		F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtDetailPanel.xib; sourceTree = "<group>"; };
+		F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtDetailPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				F961C5C41D7482830059BD33 /* mrtView.xib */,
 				F961C5C51D7482830059BD33 /* mrtView.swift */,
 				F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */,
+				F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				64CA7F011D2C0420009DDB9A /* MenuBar.swift in Sources */,
 				F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */,
 				64CA7F191D2DF18E009DDB9A /* TabButtonView.swift in Sources */,
+				F9DA215F1DDC38D000DC22BD /* mrtDetailPanel.swift in Sources */,
 				64CA7F151D2D690A009DDB9A /* CustomMKPointAnnotation.swift in Sources */,
 				64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */,
 				64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */,
