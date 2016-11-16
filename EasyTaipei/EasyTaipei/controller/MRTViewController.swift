@@ -74,9 +74,9 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
     }
     
     private func setupGestureRecognizer() {
-        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
-        doubleTap.numberOfTapsRequired = 2
-        scrollView.addGestureRecognizer(doubleTap)
+//        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
+//        doubleTap.numberOfTapsRequired = 2
+//        scrollView.addGestureRecognizer(doubleTap)
         
         //oneTap for location
         let oneTap = UITapGestureRecognizer(target: self, action: #selector(handleOneTap))
@@ -155,7 +155,13 @@ extension MRTViewController {
         
         for data in mrtButtonCoordinates {
             let button = UIButton(type: .System)
-            button.center = CGPointFromString(data.coordinatesString!)
+            
+            //Adjustment for different device, the button coordinate data is for iPhone 6s Plus
+            var buttonCoordinate = CGPointFromString(data.coordinatesString!)
+            buttonCoordinate.x = buttonCoordinate.x * mrtView.frame.width/414
+            buttonCoordinate.y = buttonCoordinate.y * mrtView.frame.height/623
+            button.center = buttonCoordinate
+            
             button.bounds = CGRect(x: 0,y: 0,width: 9,height: 9)
             button.backgroundColor = .redColor()
             button.alpha = 0.6
