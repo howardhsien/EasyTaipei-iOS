@@ -196,28 +196,24 @@ extension MRTViewController {
     }
     
     func MRTButtonBehavior(sender: UIButton!){
-        sender.backgroundColor = .greenColor()
         
         if buttonTagSelected.count < 2 {
-            print("count<2: \(buttonTagSelected.count)")
-            
             if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
+            sender.backgroundColor = .greenColor()
             
         } else {
-            print("else: \(buttonTagSelected.count)")
             cleanButton()
             
             if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
+            sender.backgroundColor = .greenColor()
         }
         
         if buttonTagSelected.count == 2 {
-            print("count==2: \(buttonTagSelected.count)")
             getEstimatedArrivalTimeData(buttonTagSelected[0].currentTitle!, station2: buttonTagSelected[1].currentTitle!)
         }
     }
-    
     
     func cleanButton() {
         mrtDetailPanel.hidden = true
