@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-        
         return true
     }
 
@@ -218,6 +217,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("Removing data before preload, this should not happend")
     }
+    
 }
 
 
