@@ -14,6 +14,9 @@ class MRTDetailPanel: UIView {
     
     @IBOutlet weak var estimatedArrivalTime: UILabel!
     
+    @IBOutlet weak var originalFee: UILabel!
+    
+    
 }
 
 extension MRTDetailPanel {

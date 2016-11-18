@@ -211,7 +211,11 @@ extension MRTViewController {
         }
         
         if buttonTagSelected.count == 2 {
-            getEstimatedArrivalTimeData(buttonTagSelected[0].currentTitle!, station2: buttonTagSelected[1].currentTitle!)
+            let station1 = buttonTagSelected[0].currentTitle!
+            let station2 = buttonTagSelected[1].currentTitle!
+            let time = getEstimatedArrivalTimeData(station1, station2: station2)
+            let originalFee = getMRTTransportationFee(station1, station2: station2)
+            showDetailPanel(station1, station2: station2, time: time, originalFee: originalFee)
         }
     }
     
@@ -223,7 +227,7 @@ extension MRTViewController {
         buttonTagSelected = []
     }
     
-    func getEstimatedArrivalTimeData(station1: String, station2: String) {
+    func getEstimatedArrivalTimeData(station1: String, station2: String) -> NSNumber {
         let managedObjectContext: NSManagedObjectContext? =
             (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
         
@@ -232,29 +236,47 @@ extension MRTViewController {
         requestForEstimatedArrivalTime.fetchLimit = 3
         requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
         
-        guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return}
+        guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return 0}
         
         if estimatedArrivalTimeData.count == 0 {
             //反向查詢，萬芳->動物園，變成動物園->萬芳
             getEstimatedArrivalTimeData(station2, station2: station1)
-            return
         }
         
-        if estimatedArrivalTimeData.first?.station1 != nil &&
-        estimatedArrivalTimeData.first?.station2 != nil &&
-            estimatedArrivalTimeData.first?.time != nil {
-            
-            print("\(station1) to \(station2) needs \(time) minute(s)")
-            showDetailPanel((estimatedArrivalTimeData.first?.station1)!,
-                            station2: (estimatedArrivalTimeData.first?.station2)!,
-                            time: (estimatedArrivalTimeData.first?.time)!)
+        if estimatedArrivalTimeData.first?.time != nil {
+            return  (estimatedArrivalTimeData.first?.time)!
         }
         
+        return 0
     }
     
-    func showDetailPanel(station1: String, station2: String, time: NSNumber){
+    func getMRTTransportationFee(station1: String, station2: String) -> NSNumber {
+        let managedObjectContext: NSManagedObjectContext? =
+            (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+        
+        let requestForMRTTransportationFee = NSFetchRequest(entityName: "MRTTransportationFee")
+        requestForMRTTransportationFee.fetchBatchSize = 1
+        requestForMRTTransportationFee.fetchLimit = 3
+        requestForMRTTransportationFee.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
+        
+        guard let mrtTransportationFee = try? managedObjectContext!.executeFetchRequest(requestForMRTTransportationFee) as! [MRTTransportationFee] else {return 0}
+        
+        if mrtTransportationFee.count == 0 {
+            //反向查詢，萬芳->動物園，變成動物園->萬芳
+            getMRTTransportationFee(station2, station2: station1)
+        }
+        
+        if mrtTransportationFee.first?.originalFee != nil {
+            return (mrtTransportationFee.first?.originalFee)!
+        }
+        
+        return 0
+    }
+    
+    func showDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
         mrtDetailPanel.mrtRoute.text = "\(station1) <– –> \(station2)"
         mrtDetailPanel.estimatedArrivalTime.text = "行駛\(time)分鐘"
+        mrtDetailPanel.originalFee.text = "票價\(originalFee)元"
         mrtDetailPanel.hidden = false
     }
 }

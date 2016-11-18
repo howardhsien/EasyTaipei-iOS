@@ -82,6 +82,7 @@
             <connections>
                 <outlet property="estimatedArrivalTime" destination="ubi-6m-ykO" id="Xr8-4D-MfP"/>
                 <outlet property="mrtRoute" destination="zCS-kA-He7" id="qei-Vl-BfB"/>
+                <outlet property="originalFee" destination="Vol-4I-Q6Y" id="Dt2-SI-aDh"/>
             </connections>
         </view>
     </objects>
