@@ -56,6 +56,7 @@ class MapViewController: UIViewController{
         setupMapAndLocationManager()
         setupMapRegion()
         setupActivityIndicator()
+        bringViewToFront()
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -63,7 +64,7 @@ class MapViewController: UIViewController{
             guard let dataType = dataType else{ return }
             showInfoType(dataType: dataType)
         }
-
+        
         
     }
     //MARK: Style Setting
@@ -105,14 +106,14 @@ class MapViewController: UIViewController{
         showInfoType(dataType: dataType)
     }
     
- 
+    
 }
 //MARK: MapView and LocationManager Method
 extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     
     //MARK: locationManager
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-//        print("didChangeAuthorizationStatus")
+        print("didChangeAuthorizationStatus")
         setupMapRegion()
     }
     
@@ -168,7 +169,7 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
         
     }
     
-  
+    
     //MARK: MapView
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? CustomMKPointAnnotation else { return nil}
