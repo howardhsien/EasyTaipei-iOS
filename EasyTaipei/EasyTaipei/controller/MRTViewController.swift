@@ -172,9 +172,8 @@ extension MRTViewController {
             buttonCoordinate.y = buttonCoordinate.y * mrtView.frame.height/623
             button.center = buttonCoordinate
             
-            button.bounds = CGRect(x: 0,y: 0,width: 9,height: 9)
-            button.backgroundColor = .redColor()
-            button.alpha = 0.6
+            button.bounds = CGRect(x: 0,y: 0,width: 15,height: 15)
+            button.backgroundColor = .clearColor()
             button.addTarget(self, action: #selector(MRTViewController.MRTButtonBehavior(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             
             button.setTitle(data.station, forState: UIControlState.Normal)
@@ -200,14 +199,16 @@ extension MRTViewController {
         if buttonTagSelected.count < 2 {
             if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
-            sender.backgroundColor = .greenColor()
+//            sender.backgroundColor = .greenColor()
+            activateButton(sender)
             
         } else {
             cleanButton()
             
             if buttonTagSelected.contains(sender) { return }
             buttonTagSelected.append(sender)
-            sender.backgroundColor = .greenColor()
+//            sender.backgroundColor = .greenColor()
+            activateButton(sender)
         }
         
         if buttonTagSelected.count == 2 {
@@ -222,9 +223,29 @@ extension MRTViewController {
     func cleanButton() {
         mrtDetailPanel.hidden = true
         for button in buttonTagSelected {
-            button.backgroundColor = .redColor()
+            button.backgroundColor = .clearColor()
         }
         buttonTagSelected = []
+    }
+    
+    func activateButton(button: UIButton!) {
+        let image = UIImage(named: "MRT") as UIImage?
+        button.tintColor = UIColor(red: 242/255.0, green: 255/255.0, blue: 227/255.0, alpha: 1.0)
+        button.setImage(image, forState: .Normal)
+        
+        button.backgroundColor = UIColor(red: 23/255.0, green: 149/255.0, blue: 163/255.0, alpha: 1.0)
+//        button.layer.cornerRadius = 0.5 * button.bounds.size.width
+//        button.clipsToBounds = true
+//        let buttonShadow = UIView(frame: CGRectMake(0, 0, 15, 15))
+//        buttonShadow.layer.shadowColor = UIColor.blackColor().CGColor
+//        buttonShadow.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+//        buttonShadow.layer.shadowOpacity = 1
+//        buttonShadow.layer.shadowRadius = 10
+//        buttonShadow.center = button.center
+//        mrtView.insertSubview(buttonShadow, belowSubview: button.imageView!)
+//        buttonShadow.layer.zPosition = -1 //add under button
+        
+
     }
     
     func getEstimatedArrivalTimeData(station1: String, station2: String) -> NSNumber {

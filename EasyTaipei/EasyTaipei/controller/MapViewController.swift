@@ -112,7 +112,7 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     
     //MARK: locationManager
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        print("didChangeAuthorizationStatus")
+//        print("didChangeAuthorizationStatus")
         setupMapRegion()
     }
     
