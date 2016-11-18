@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        loadMRTTransportationFeeCSV()
         return true
     }
 
@@ -123,7 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func preloadData(){
         loadEstimatedArrivalTimeJSON()
-        loadMRTButtonCoordinates()
+        loadMRTButtonCoordinatesJSON()
     }
     
     private func loadEstimatedArrivalTimeJSON(){
@@ -178,7 +180,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Removing data before preload, this should not happend")
     }
     
-    private func loadMRTButtonCoordinates(){
+    private func loadMRTButtonCoordinatesJSON(){
         
         removeMRTButtonCoordinatesData()
         
@@ -216,6 +218,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = try? managedObjectContext.save()
         
         print("Removing data before preload, this should not happend")
+    }
+    
+    private func loadMRTTransportationFeeCSV(){
+        do {
+            if let path = NSBundle.mainBundle().pathForResource("mrtTransportationFee", ofType: "txt"){
+                let data = try String(contentsOfFile:path, encoding: NSUTF8StringEncoding)
+                
+                let mrtTransportationFeeData = data.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+                print(mrtTransportationFeeData[2])
+            }
+        } catch let err as NSError {
+            print(err)
+        }
     }
     
 }

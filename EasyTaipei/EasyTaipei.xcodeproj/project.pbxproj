@@ -40,7 +40,7 @@
 		F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */; };
 		F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */; };
 		F9DA215F1DDC38D000DC22BD /* mrtDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */; };
-		F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.csv in Resources */ = {isa = PBXBuildFile; fileRef = F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.csv */; };
+		F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.txt in Resources */ = {isa = PBXBuildFile; fileRef = F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,7 @@
 		F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTButtonCoordinates.swift; sourceTree = "<group>"; };
 		F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtDetailPanel.xib; sourceTree = "<group>"; };
 		F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtDetailPanel.swift; sourceTree = "<group>"; };
-		F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mrtTransportationFee.csv; sourceTree = "<group>"; };
+		F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mrtTransportationFee.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +213,7 @@
 				F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */,
 				F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */,
 				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
-				F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.csv */,
+				F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */,
 				F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */,
 				F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */,
 			);
@@ -291,7 +291,7 @@
 				F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */,
 				F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
-				F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.csv in Resources */,
+				F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.txt in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
 				F961C5C61D7482830059BD33 /* mrtView.xib in Resources */,
 				F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */,
