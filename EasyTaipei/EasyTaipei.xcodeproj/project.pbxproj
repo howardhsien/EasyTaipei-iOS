@@ -32,6 +32,20 @@
 		64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7F1A1D2E5588009DDB9A /* LandingPageViewController.swift */; };
 		64CA7F1D1D2E9DC0009DDB9A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA7F1C1D2E9DC0009DDB9A /* MenuCell.swift */; };
 		6B554701DBDE142BF1A6B1D2 /* Pods_EasyTaipei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */; };
+		F961C5C61D7482830059BD33 /* mrtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F961C5C41D7482830059BD33 /* mrtView.xib */; };
+		F961C5C71D7482830059BD33 /* mrtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5C51D7482830059BD33 /* mrtView.swift */; };
+		F961C5CB1D7485C50059BD33 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */; };
+		F961C5D61D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */; };
+		F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */; };
+		F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */; };
+		F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */; };
+		F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */; };
+		F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */; };
+		F9777C021DDEA24100E36D91 /* MRTTransportationFee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9777C001DDEA24100E36D91 /* MRTTransportationFee+CoreDataProperties.swift */; };
+		F9777C031DDEA24100E36D91 /* MRTTransportationFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9777C011DDEA24100E36D91 /* MRTTransportationFee.swift */; };
+		F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */; };
+		F9DA215F1DDC38D000DC22BD /* mrtDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */; };
+		F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.txt in Resources */ = {isa = PBXBuildFile; fileRef = F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +78,20 @@
 		64CA7F1A1D2E5588009DDB9A /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		64CA7F1C1D2E9DC0009DDB9A /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		7B84880BB6666F82079682A2 /* Pods-EasyTaipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTaipei.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTaipei/Pods-EasyTaipei.release.xcconfig"; sourceTree = "<group>"; };
+		F961C5C41D7482830059BD33 /* mrtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtView.xib; sourceTree = "<group>"; };
+		F961C5C51D7482830059BD33 /* mrtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtView.swift; sourceTree = "<group>"; };
+		F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EstimatedArrivalTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimatedArrivalTime.swift; sourceTree = "<group>"; };
+		F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EstimatedArrivalTime.json; sourceTree = "<group>"; };
+		F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MRTButtonCoordinates.json; sourceTree = "<group>"; };
+		F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRTButtonCoordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTButtonCoordinates.swift; sourceTree = "<group>"; };
+		F9777C001DDEA24100E36D91 /* MRTTransportationFee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRTTransportationFee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9777C011DDEA24100E36D91 /* MRTTransportationFee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTTransportationFee.swift; sourceTree = "<group>"; };
+		F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mrtDetailPanel.xib; sourceTree = "<group>"; };
+		F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mrtDetailPanel.swift; sourceTree = "<group>"; };
+		F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mrtTransportationFee.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +136,9 @@
 		64CA7EBB1D2B58A6009DDB9A /* EasyTaipei */ = {
 			isa = PBXGroup;
 			children = (
+				F961C5C81D7485910059BD33 /* MRT data */,
 				64CA7ECE1D2B5CB9009DDB9A /* controller */,
 				64CA7ECF1D2B5CB9009DDB9A /* helper */,
-				64CA7ED01D2B5CB9009DDB9A /* model */,
 				64CA7ED11D2B5CB9009DDB9A /* resource */,
 				64CA7ED21D2B5CB9009DDB9A /* supporting files */,
 				64CA7ED31D2B5CB9009DDB9A /* view */,
@@ -144,13 +172,6 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
-		64CA7ED01D2B5CB9009DDB9A /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		64CA7ED11D2B5CB9009DDB9A /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +202,10 @@
 				64CA7F001D2C0420009DDB9A /* MenuBar.swift */,
 				64CA7F161D2D87D2009DDB9A /* TabButtonView.xib */,
 				64CA7F181D2DF18E009DDB9A /* TabButtonView.swift */,
+				F961C5C41D7482830059BD33 /* mrtView.xib */,
+				F961C5C51D7482830059BD33 /* mrtView.swift */,
+				F9DA215A1DDC071800DC22BD /* mrtDetailPanel.xib */,
+				F9DA215E1DDC38D000DC22BD /* mrtDetailPanel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -191,6 +216,23 @@
 				085CB7FDB7CBA11FB9A08527 /* Pods_EasyTaipei.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F961C5C81D7485910059BD33 /* MRT data */ = {
+			isa = PBXGroup;
+			children = (
+				F9777C001DDEA24100E36D91 /* MRTTransportationFee+CoreDataProperties.swift */,
+				F9777C011DDEA24100E36D91 /* MRTTransportationFee.swift */,
+				F961C61B1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift */,
+				F961C61C1D771EC20059BD33 /* MRTButtonCoordinates.swift */,
+				F961C5D41D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift */,
+				F961C5D51D7488AD0059BD33 /* EstimatedArrivalTime.swift */,
+				F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */,
+				F9DA21601DDD5DE600DC22BD /* mrtTransportationFee.txt */,
+				F961C6171D7564BC0059BD33 /* EstimatedArrivalTime.json */,
+				F961C6191D77194A0059BD33 /* MRTButtonCoordinates.json */,
+			);
+			name = "MRT data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +303,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CA7F171D2D87D2009DDB9A /* TabButtonView.xib in Resources */,
+				F9DA215B1DDC071800DC22BD /* mrtDetailPanel.xib in Resources */,
+				F961C6181D7564BC0059BD33 /* EstimatedArrivalTime.json in Resources */,
 				64CA7EC71D2B58A6009DDB9A /* LaunchScreen.storyboard in Resources */,
+<<<<<<< HEAD
 				648349C61D375D14008E96DF /* TPECityToilet.json in Resources */,
 				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
 				648349C91D377271008E96DF /* TPERiverSideToilet.json in Resources */,
+=======
+				F9DA21611DDD5DE600DC22BD /* mrtTransportationFee.txt in Resources */,
+				64CA7EC41D2B58A6009DDB9A /* Assets.xcassets in Resources */,
+				F961C5C61D7482830059BD33 /* mrtView.xib in Resources */,
+				F961C61A1D77194A0059BD33 /* MRTButtonCoordinates.json in Resources */,
+>>>>>>> acb90278f7fb125a58280147895e26dac2597b64
 				64CA7EC21D2B58A6009DDB9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,22 +377,31 @@
 			files = (
 				64CA7ED51D2B5DCF009DDB9A /* MRTViewController.swift in Sources */,
 				64CA7F0D1D2C2D64009DDB9A /* UIColor+ESYAdditions.swift in Sources */,
+				F961C5C71D7482830059BD33 /* mrtView.swift in Sources */,
 				64CA7F1D1D2E9DC0009DDB9A /* MenuCell.swift in Sources */,
 				64CA7EDF1D2BB9EE009DDB9A /* TabBarController.swift in Sources */,
 				64CA7EDB1D2B5FF9009DDB9A /* MapViewController.swift in Sources */,
 				64CA7EDD1D2B86FC009DDB9A /* JSONParser.swift in Sources */,
 				64CA7ED71D2B5FAF009DDB9A /* YoubikeViewController.swift in Sources */,
+				F9777C021DDEA24100E36D91 /* MRTTransportationFee+CoreDataProperties.swift in Sources */,
 				64CA7F141D2D690A009DDB9A /* CustomAnnotationView.swift in Sources */,
 				64CA7F031D2C046B009DDB9A /* BaseCell.swift in Sources */,
 				64CA7F011D2C0420009DDB9A /* MenuBar.swift in Sources */,
+				F961C61D1D771EC20059BD33 /* MRTButtonCoordinates+CoreDataProperties.swift in Sources */,
 				64CA7F191D2DF18E009DDB9A /* TabButtonView.swift in Sources */,
+				F9DA215F1DDC38D000DC22BD /* mrtDetailPanel.swift in Sources */,
 				64CA7F151D2D690A009DDB9A /* CustomMKPointAnnotation.swift in Sources */,
 				648349CB1D378FC3008E96DF /* TrackingManager.swift in Sources */,
 				64CA7EBD1D2B58A6009DDB9A /* AppDelegate.swift in Sources */,
 				64CA7F1B1D2E5588009DDB9A /* LandingPageViewController.swift in Sources */,
+				F961C5D61D7488AD0059BD33 /* EstimatedArrivalTime+CoreDataProperties.swift in Sources */,
 				64CA7F051D2C0560009DDB9A /* Extensions.swift in Sources */,
+				F9777C031DDEA24100E36D91 /* MRTTransportationFee.swift in Sources */,
 				64CA7ED91D2B5FDD009DDB9A /* ToiletViewController.swift in Sources */,
+				F961C5CB1D7485C50059BD33 /* Model.xcdatamodeld in Sources */,
+				F961C61E1D771EC20059BD33 /* MRTButtonCoordinates.swift in Sources */,
 				64CA7F0F1D2CCFA8009DDB9A /* HitTest.swift in Sources */,
+				F961C5D71D7488AD0059BD33 /* EstimatedArrivalTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +565,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F961C5C91D7485C50059BD33 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */,
+			);
+			currentVersion = F961C5CA1D7485C50059BD33 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 64CA7EB11D2B58A6009DDB9A /* Project object */;
 }
