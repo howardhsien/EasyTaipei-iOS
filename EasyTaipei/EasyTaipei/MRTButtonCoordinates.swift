@@ -19,7 +19,6 @@ class MRTButtonCoordinates: NSManagedObject {
             mrtButtonCoordinates.station = station
             mrtButtonCoordinates.coordinatesString = coordinatesString
         }
-        
     }
 
 }

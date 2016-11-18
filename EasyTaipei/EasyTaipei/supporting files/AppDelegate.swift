@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-        loadMRTTransportationFeeCSV()
         return true
     }
 
@@ -126,6 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func preloadData(){
         loadEstimatedArrivalTimeJSON()
         loadMRTButtonCoordinatesJSON()
+        loadMRTTransportationFeeCSV()
     }
     
     private func loadEstimatedArrivalTimeJSON(){
@@ -140,8 +140,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard let JSONObject = object as? [String: AnyObject] else {return}
             readEstimatedArrivalTimeJSON(JSONObject)
             
-        } catch {
-            // Handle Error
+        } catch let error as NSError {
+            print(error)
         }
     }
     
@@ -172,12 +172,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if estimatedArrivalTimeData.count > 0 {
             for data in estimatedArrivalTimeData {
                 managedObjectContext.deleteObject(data)
+                print("Removing data before preload, this should not happend")
             }
+            estimatedArrivalTimeData.removeAll(keepCapacity: false)
+            _ = try? managedObjectContext.save()
         }
-        estimatedArrivalTimeData.removeAll(keepCapacity: false)
-        _ = try? managedObjectContext.save()
-        
-        print("Removing data before preload, this should not happend")
     }
     
     private func loadMRTButtonCoordinatesJSON(){
@@ -192,8 +191,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard let JSONObject = object as? [String:String] else {return}
             readMRTButtonCoordinatesJSON(JSONObject)
             
-        } catch {
-            // Handle Error
+        } catch let error as NSError {
+            print(error)
         }
     }
     
@@ -212,27 +211,79 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if mrtButtonCoordinates.count > 0 {
             for data in mrtButtonCoordinates {
                 managedObjectContext.deleteObject(data)
+                print("Removing data before preload, this should not happend")
             }
+            mrtButtonCoordinates.removeAll(keepCapacity: false)
+            _ = try? managedObjectContext.save()
         }
-        mrtButtonCoordinates.removeAll(keepCapacity: false)
-        _ = try? managedObjectContext.save()
-        
-        print("Removing data before preload, this should not happend")
     }
     
     private func loadMRTTransportationFeeCSV(){
+        removeMRTTransportationFeeCSV()
+        
         do {
             if let path = NSBundle.mainBundle().pathForResource("mrtTransportationFee", ofType: "txt"){
                 let data = try String(contentsOfFile:path, encoding: NSUTF8StringEncoding)
-                
                 let mrtTransportationFeeData = data.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
-                print(mrtTransportationFeeData[2])
+                
+                for mrtFeeData in mrtTransportationFeeData{
+                    //csv header
+                    if mrtFeeData != "" && mrtFeeData != "station1,station2,originalFee,easyCard,senior,charity,,"{
+                        
+                        let feeData = mrtFeeData.componentsSeparatedByString(",")
+                        let station1 = feeData[0]
+                        let station2 = feeData[1]
+                        guard let originalFee = Double(feeData[2]) else {return}
+                        guard let easyCard = Double(feeData[3]) else {return}
+                        guard let senior = Double(feeData[4]) else {return}
+                        
+                        MRTTransportationFee.insert(station1,
+                                                    station2: station2,
+                                                    originalFee: originalFee,
+                                                    easyCard: easyCard,
+                                                    senior: senior,
+                                                    charity: 0,
+                                                    context: managedObjectContext)
+                    }
+                }
+                _ = try? managedObjectContext.save()
             }
-        } catch let err as NSError {
-            print(err)
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    
+    private func removeMRTTransportationFeeCSV(){
+        let requestForMRTTransportationFee = NSFetchRequest(entityName: "MRTTransportationFee")
+        
+        guard var mrtTransportationFeeData = try? managedObjectContext.executeFetchRequest(requestForMRTTransportationFee) as! [EstimatedArrivalTime] else {return}
+        if mrtTransportationFeeData.count > 0 {
+            for data in mrtTransportationFeeData {
+                managedObjectContext.deleteObject(data)
+                print("Removing data before preload, this should not happend")
+            }
+            mrtTransportationFeeData.removeAll(keepCapacity: false)
+            _ = try? managedObjectContext.save()
         }
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
