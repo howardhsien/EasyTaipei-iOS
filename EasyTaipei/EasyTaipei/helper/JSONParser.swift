@@ -24,9 +24,10 @@ struct Toilet {
 }
 
 struct Youbike {
-    var category: String
     var name: String
+    var name_en:String
     var address: String
+    var address_en: String
     var latitude: Double
     var longitude: Double
     var bikeLeft:Int
@@ -47,8 +48,8 @@ class JSONParser {
     
     //MARK: return the dataUrl array
     static let dataUrlDictionary :[DataType : [String]] = [
-        .Toilet : ["http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=008ed7cf-2340-4bc4-89b0-e258a5573be2",
-                "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe49c753-9358-49dd-8235-1fcadf5bfd3f"],
+//        .Toilet : ["http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=008ed7cf-2340-4bc4-89b0-e258a5573be2",
+//                "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe49c753-9358-49dd-8235-1fcadf5bfd3f"],
         .Youbike : ["http://data.taipei/youbike"]
     ]
     
@@ -58,6 +59,17 @@ class JSONParser {
             completion()
         }
         else{
+            if dataType == .Toilet{
+                if let riverToiletJSON = readJsonFile("TPERiverSideToilet"){
+                    parseToiletTaipeiRiverSide(riverToiletJSON)
+                }
+                if let cityToiletJSON = readJsonFile("TPECityToilet"){
+                    parseToiletTaipeiCity(cityToiletJSON)
+                }
+                completion()
+                return
+            }
+
             guard let urlArray = JSONParser.dataUrlDictionary[dataType] else{ return }
             for index in 0 ..< urlArray.count{
                 dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0) ){
@@ -86,6 +98,23 @@ class JSONParser {
                 }
             }
         }
+    }
+    
+    func readJsonFile(fileName: String) -> AnyObject?{
+        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json") {
+            do {
+                let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                
+                let jsonObj = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+                return jsonObj
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+            print("Invalid filename/path.")
+        }
+        return nil
     }
     
     //MARK: Parsing Method
@@ -139,9 +168,10 @@ class JSONParser {
     private func parseYoubike(data: AnyObject) {
         guard let results = data["retVal"] as?[String:[String:AnyObject]] else { print(classDebugInfo+#function+":retVal failed") ; return }
         for youbikeResult in results {
-            guard let category = youbikeResult.1["sarea"] else{ print(classDebugInfo+#function + ":get youbikeResult category failed") ; return }
             guard let name = youbikeResult.1["sna"]  else{ print(classDebugInfo+#function + ":get youbikeResult name failed") ; return }
+            guard let name_en = youbikeResult.1["snaen"]  else{ print(classDebugInfo+#function + ":get youbikeResult english name failed") ; return }
             guard let address = youbikeResult.1["ar"]  else{ print(classDebugInfo+#function + ":get youbikeResult address failed") ; return }
+            guard let address_en = youbikeResult.1["aren"]  else{ print(classDebugInfo+#function + ":get youbikeResult english address failed") ; return }
             guard let longitude_str = youbikeResult.1["lng"]  else{ print(classDebugInfo+#function + ":get youbikeResult longitude failed") ; return }
             guard let latitude_str = youbikeResult.1["lat"]  else{ print(classDebugInfo+#function + ":get youbikeResult latitude failed") ; return }
             guard let bikeLeft_str = youbikeResult.1["sbi"] else{ print(classDebugInfo+#function + ":get youbikeResult bikeLeft failed") ; return }
@@ -150,9 +180,11 @@ class JSONParser {
             guard let latitude = Double(String(latitude_str)) else { print(classDebugInfo+#function + ":make latitude double failed") ; return  }
             guard let bikeLeft = Int(String(bikeLeft_str)) else { print(classDebugInfo+#function + ":make bikeLeft Int failed") ; return  }
             
-            youbikes.append(Youbike(category:String(category),
+            youbikes.append(Youbike(
                 name: String(name),
+                name_en: String(name_en),
                 address: String(address),
+                address_en: String(address_en),
                 latitude: latitude,
                 longitude:longitude,
                 bikeLeft: bikeLeft))

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Foundation
+import Amplitude_iOS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // Override point for customization after application launch.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        Amplitude.instance().initializeApiKey("aa386419aa58ab94d59d39a785f8821a")
+
         return true
     }
 

@@ -12,20 +12,23 @@ import UIKit
 
 class LandingPageViewController: UIViewController {
     var jsonParser = JSONParser.sharedInstance()
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         jsonParser.getDataWithCompletionHandler(.Toilet,completion: {
             if let tabBarVC = self.storyboard?.instantiateViewControllerWithIdentifier("TabBarController") as? TabBarController{
-//                if let window =  (UIApplication.sharedApplication().delegate as? AppDelegate)?.window {
-//                    UIView.transitionWithView(window, duration: 0.5, options: .TransitionFlipFromBottom, animations: {window.rootViewController = tabBarVC}, completion:nil )
-//                    
-//                }
-//               
-//                (UIApplication.sharedApplication().delegate as? AppDelegate)?.
+                //                if let window =  (UIApplication.sharedApplication().delegate as? AppDelegate)?.window {
+                //                    UIView.transitionWithView(window, duration: 0.5, options: .TransitionFlipFromBottom, animations: {window.rootViewController = tabBarVC}, completion:nil )
+                //
+                //                }
+                //
+                //                (UIApplication.sharedApplication().delegate as? AppDelegate)?.
                 self.presentViewController(tabBarVC, animated: true, completion: nil)
             }
         })
 
+    
     }
 
 

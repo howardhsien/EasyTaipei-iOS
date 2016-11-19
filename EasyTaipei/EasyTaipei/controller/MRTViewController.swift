@@ -60,6 +60,11 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         buttonIteration()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        TrackingManager.log(event:classDebugInfo+#function)
+    }
+    
     //MARK: ScrollView
     private func setupScrollView(){
         scrollView.addSubview(mrtView)

@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (3.4.1)
+  - Amplitude-iOS (3.8.1)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - Alamofire
+  - Amplitude-iOS
   - PureLayout
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Amplitude-iOS: 153d280ce87ab715af56ed6e91739b4d885afd43
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: b6b1fd0bd7f64ba906e0e8efc3f2e97c40c8dc0f
+PODFILE CHECKSUM: 5f87730f6b012f5e1bf4016c9d62044fddde4ffc
 
 COCOAPODS: 1.0.1
