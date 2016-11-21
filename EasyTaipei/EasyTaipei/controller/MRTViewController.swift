@@ -29,12 +29,10 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
             
             let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
             if let tabHeight = self.tabBarController?.tabBar.frame.height,
-                navHeight = self.navigationController?.navigationBar.frame.height
-                
-            {
+                navHeight = self.navigationController?.navigationBar.frame.height {
                 mrtView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height  - tabHeight - navHeight - statusBarHeight)
             }
-            else{
+            else {
                 mrtView.frame = self.view.frame
             }
             mrtView.contentMode = .ScaleToFill
@@ -56,8 +54,15 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         setupGestureRecognizer()
         
         //Chris
-        mrtDetailPanel.hidden = true
         buttonIteration()
+        setupMRTDetailPanel()
+    }
+    
+    func setupMRTDetailPanel() {
+        //setup mrtDetailPanel
+        mrtDetailPanel.frame = CGRectMake(0, (self.tabBarController?.tabBar.frame.height)!, mrtView.frame.size.width, 100)
+        mrtDetailPanel.hidden = true
+        view.addSubview(mrtDetailPanel)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -71,11 +76,6 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         scrollView.maximumZoomScale = 4.0
         scrollView.minimumZoomScale = 1.0
         scrollView.contentSize = mrtView.frame.size
-        
-        //setup mrtDetailPanel
-        mrtDetailPanel.frame = CGRectMake(0, 0, mrtView.frame.size.width, 100)
-        mrtDetailPanel.hidden = true
-        scrollView.addSubview(mrtDetailPanel)
     }
     
     //handle the zooming
