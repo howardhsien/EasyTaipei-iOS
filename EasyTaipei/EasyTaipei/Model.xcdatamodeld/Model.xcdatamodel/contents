@@ -9,6 +9,10 @@
         <attribute name="coordinatesString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="station" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="MRTEnglishName" representedClassName=".MRTEnglishName" syncable="YES">
+        <attribute name="stationChinese" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationEnglish" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="MRTTransportationFee" representedClassName=".MRTTransportationFee" syncable="YES">
         <attribute name="charity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="easyCard" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -21,5 +25,6 @@
         <element name="EstimatedArrivalTime" positionX="-45" positionY="0" width="128" height="88"/>
         <element name="MRTButtonCoordinates" positionX="-18" positionY="54" width="128" height="75"/>
         <element name="MRTTransportationFee" positionX="-27" positionY="45" width="128" height="135"/>
+        <element name="MRTEnglishName" positionX="-18" positionY="81" width="128" height="75"/>
     </elements>
 </model>

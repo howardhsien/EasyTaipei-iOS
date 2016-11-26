@@ -1,0 +1,108 @@
+淡水,Tamsui
+紅樹林,Hongshulin
+竹圍,Zhuwei
+關渡,Guandu
+忠義,Zhongyi
+復興崗,Fuixnggang
+奇岩,Qiyan
+唭哩岸,Qilian
+石牌,Shipai
+明德,Mingde
+芝山,Zhishan
+士林,Shilin
+劍潭,Jiantan
+圓山,Yuanshan
+民權西路,Minquan W. Rd.
+雙連,Shuanglian
+中山,Zhongshan
+台北車站,Taipei Main Staiton
+台大醫院,NTU Hospital
+中正紀念堂,C.K.S Memorial Hall
+東門,Dongmen
+大安森林公園,Daan Park
+大安,Daan
+信義安和,Xinyi Anhe
+台北101/世貿,Taipei 101/Taipei World Trade Center
+象山,Xiangshan
+北投,Beitou
+新北投,Xinbeitou
+古亭,Guting
+台電大樓,Taipower Building
+公館,Gongguan
+萬隆,Wanlong
+景美,Jingmei
+大坪林,Dapinling
+七張,Qizhang
+新店區公所,Xindian District Office
+新店,Xindian
+松山,Songshan
+南京三民,Nanjing Sanmin
+小巨蛋,Taipei Arena
+松江南京,Songjian Nanjin
+北門,Beimen
+小南門,Xiaonanmen
+小碧潭,Xiaobitan
+頂溪,Dingxi
+永安市場,Yongan Market
+景安,Jingan
+南勢角,Nanshijiao
+蘆洲,Luzho
+三民高中,Sanmin Senior High School
+徐匯中學,St. Ignatius High School
+三和國中,Sanhe Junior High School
+三重國小,Sanchong Elementary School
+大橋頭,Daqiaoto
+迴龍,Huilon
+丹鳳,Danfen
+輔大,Fu Jen University
+新莊,Xinzhuan
+頭前庄,Touqanchuan
+先嗇宮,Xianse Temple
+三重,Sanchon
+菜寮,Cailia
+台北橋,Taipei Bridge
+中山國小,Zhongshang Elementary School
+行天宮,Xingtian Tample
+南港展覽館,Taipei Nanggong Exhibition Center
+南港,Nangang
+昆陽,Kunyang
+後山埤,Houshanpi
+永春,Yongchun
+市政府,Taipei City Hall
+國父紀念館,S.Y.S. Memorial Hall
+忠孝敦化,Zhongxiao Dunhua
+忠孝復興,Zhongxiao Fuxing
+忠孝新生,Zhongxiao Xinsheng
+善導寺,Shandau Temple
+西門,Ximen
+龍山寺,Longshan Temple
+江子翠,Jiangzicui
+新埔,Xinpu
+板橋,Banqiao
+府中,Fuzhon
+亞東醫院,Far Eastern Hospital
+海山,Haishan
+土城,Tuchen
+永寧,Yongnin
+頂埔,Dingpu
+中山國中,Zhongshan Junior High School
+南京復興,Nanjing Fuxing
+科技大樓,Technology Building
+六張犁,Liuzhangli
+麟光,Linguang
+辛亥,Xinhai
+萬芳醫院,Wanfang Hospital
+萬芳社區,Wanfang Community
+木柵,Muzha
+動物園,Taipei Zoo
+南港軟體園區,Nangang software Park
+東湖,Donghu
+葫洲,Huzhou
+大湖公園,Dahu Park
+內湖,Neihu
+文德,Wende
+港墘,Gangqian
+西湖,Xihu
+劍南路,Jianan Road
+大直,Dazhi
+松山機場,Songshan Airport

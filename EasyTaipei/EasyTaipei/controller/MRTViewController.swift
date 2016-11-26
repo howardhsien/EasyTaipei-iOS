@@ -220,7 +220,7 @@ extension MRTViewController {
             let station2 = buttonTagSelected[1].currentTitle!
             let time = getEstimatedArrivalTimeData(station1, station2: station2)
             let originalFee = getMRTTransportationFee(station1, station2: station2)
-            showDetailPanel(station1, station2: station2, time: time, originalFee: originalFee)
+            showEnglishDetailPanel(station1, station2: station2, time: time, originalFee: originalFee)
         }
     }
     
@@ -314,6 +314,37 @@ extension MRTViewController {
         mrtDetailPanel.originalFee.text = "票價\(originalFee)元"
         mrtDetailPanel.hidden = false
     }
+    
+    func showEnglishDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
+        mrtDetailPanel.mrtRoute.numberOfLines = 0
+        mrtDetailPanel.estimatedArrivalTime.numberOfLines = 0
+        mrtDetailPanel.originalFee.numberOfLines = 0
+        //        mrtDetailPanel.mrtRoute.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        //        mrtDetailPanel.estimatedArrivalTime.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        //        mrtDetailPanel.originalFee.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        
+        
+        mrtDetailPanel.mrtRoute.text = "\(getMRTEnglishName(station1)) <– –> \(getMRTEnglishName(station2))"
+        mrtDetailPanel.estimatedArrivalTime.text = "Arrived in \(time) minutes"
+        mrtDetailPanel.originalFee.text = "Fee: \(originalFee) TWD"
+        mrtDetailPanel.hidden = false
+    }
+    
+    func getMRTEnglishName(station: String) -> String {
+        let managedObjectContext: NSManagedObjectContext? =
+            (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
+        
+        let requestForMRTEnglishName = NSFetchRequest(entityName: "MRTEnglishName")
+        requestForMRTEnglishName.fetchBatchSize = 1
+        requestForMRTEnglishName.fetchLimit = 3
+        requestForMRTEnglishName.predicate = NSPredicate(format: "stationChinese = %@", argumentArray: [station])
+        guard let mrtEnglishName = try? managedObjectContext!.executeFetchRequest(requestForMRTEnglishName) as! [MRTEnglishName] else {return station}
+        if mrtEnglishName.count != 0 && mrtEnglishName.first?.stationEnglish != nil {
+            return (mrtEnglishName.first?.stationEnglish)!
+        }
+        return station
+    }
+
 }
 
 

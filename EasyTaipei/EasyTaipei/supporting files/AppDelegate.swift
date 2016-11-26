@@ -129,7 +129,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loadEstimatedArrivalTimeJSON()
         loadMRTButtonCoordinatesJSON()
         loadMRTTransportationFeeCSV()
+        loadMRTEnglishNameCSV()
     }
+    
+    
+    // MARK: - Estimated Arrival Time JSON
     
     private func loadEstimatedArrivalTimeJSON(){
         
@@ -182,6 +186,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    
+    
+    // MARK: - MRT Button Coordinates JSON
+    
     private func loadMRTButtonCoordinatesJSON(){
         
         removeMRTButtonCoordinatesData()
@@ -220,6 +228,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _ = try? managedObjectContext.save()
         }
     }
+    
+    
+    
+    // MARK: - MRT Transportation Fee CSV
     
     private func loadMRTTransportationFeeCSV(){
         removeMRTTransportationFeeCSV()
@@ -270,7 +282,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    
+    
+    // MARK: - MRT English Name CSV
+    
+    private func loadMRTEnglishNameCSV(){
+        removeMRTEnglishNameCSV()
+        
+        do {
+            if let path = NSBundle.mainBundle().pathForResource("mrtEnglishName", ofType: "txt"){
+                let data = try String(contentsOfFile:path, encoding: NSUTF8StringEncoding)
+                let mrtEnglishNameData = data.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+                
+                for mrtEnglishName in mrtEnglishNameData {
+                    //csv header
+                    if mrtEnglishName != "" {
+                        
+                        let nameData = mrtEnglishName.componentsSeparatedByString(",")
+                        let stationChinese = nameData[0]
+                        let stationEnglish = nameData[1]
+                        
+                        MRTEnglishName.insert(stationChinese, stationEnglish: stationEnglish, context: managedObjectContext)
+                    }
+                }
+                _ = try? managedObjectContext.save()
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    
+    private func removeMRTEnglishNameCSV() {
+        let requestForMRTEnglishNameCSV = NSFetchRequest(entityName: "MRTEnglishName")
+        
+        guard var mrtEnglishNameData = try? managedObjectContext.executeFetchRequest(requestForMRTEnglishNameCSV) as! [MRTEnglishName] else {return}
+        if mrtEnglishNameData.count > 0 {
+            for data in mrtEnglishNameData {
+                managedObjectContext.deleteObject(data)
+                print("Removing data before preload, this should not happend")
+            }
+            mrtEnglishNameData.removeAll(keepCapacity: false)
+            _ = try? managedObjectContext.save()
+        }
+    }
+    
 }
+
+    
+
 
 
 
