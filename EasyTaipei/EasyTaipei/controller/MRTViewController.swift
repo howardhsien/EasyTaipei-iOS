@@ -12,6 +12,7 @@ import CoreData
 class MRTViewController: UIViewController,UIScrollViewDelegate {
 //ScrollView image viewer
     
+    @IBOutlet weak var switchLangBarButton: UIBarButtonItem!
     private var buttonTagSelected = [UIButton]()
     private var buttonShadowSelected = [UIView]()
     
@@ -56,11 +57,41 @@ class MRTViewController: UIViewController,UIScrollViewDelegate {
         //Chris
         buttonIteration()
         setupMRTDetailPanel()
+        
+        //switchLang
+        switchLangBarButton.target = self
+        switchLangBarButton.action = #selector(switchLangAction)
+
     }
+    var currentLang = Lang.Chinese
+
+    func switchLangAction(){
+        
+        
+        switch currentLang {
+        case .Chinese:
+            //do sth to change lang to english
+            currentLang = .English
+            TrackingManager.log(event: classDebugInfo+#function+": to English")
+            
+        case .English:
+            //do sth to change lang to english
+            currentLang = .Chinese
+            TrackingManager.log(event: classDebugInfo+#function+": to Chinese")
+        }
+        //switch detail panel language
+        switchLangBarButton.title = currentLang.rawValue
+        if buttonTagSelected.count == 2 {
+            showDetailPanel()
+        }
+
+    }
+
     
     func setupMRTDetailPanel() {
         //setup mrtDetailPanel
-        mrtDetailPanel.frame = CGRectMake(0, (self.tabBarController?.tabBar.frame.height)!, mrtView.frame.size.width, 100)
+        mrtDetailPanel.frame = CGRectMake(0, ((self.navigationController?.navigationBar.frame.height)!+UIApplication.sharedApplication().statusBarFrame.size.height
+) , mrtView.frame.size.width, 100)
         mrtDetailPanel.hidden = true
         view.addSubview(mrtDetailPanel)
     }
@@ -216,12 +247,22 @@ extension MRTViewController {
         }
         
         if buttonTagSelected.count == 2 {
-            let station1 = buttonTagSelected[0].currentTitle!
-            let station2 = buttonTagSelected[1].currentTitle!
-            let time = getEstimatedArrivalTimeData(station1, station2: station2)
-            let originalFee = getMRTTransportationFee(station1, station2: station2)
+            showDetailPanel()
+        }
+    }
+    func showDetailPanel() {
+        let station1 = buttonTagSelected[0].currentTitle!
+        let station2 = buttonTagSelected[1].currentTitle!
+        let time = getEstimatedArrivalTimeData(station1, station2: station2)
+        let originalFee = getMRTTransportationFee(station1, station2: station2)
+        switch currentLang {
+        case .Chinese:
+            showChineseDetailPanel(station1, station2: station2, time: time, originalFee: originalFee)
+            
+        case .English:
             showEnglishDetailPanel(station1, station2: station2, time: time, originalFee: originalFee)
         }
+
     }
     
     func cleanButton() {
@@ -308,7 +349,7 @@ extension MRTViewController {
         return 0
     }
     
-    func showDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
+    func showChineseDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
         mrtDetailPanel.mrtRoute.text = "\(station1) <– –> \(station2)"
         mrtDetailPanel.estimatedArrivalTime.text = "行駛\(time)分鐘"
         mrtDetailPanel.originalFee.text = "票價\(originalFee)元"
@@ -325,8 +366,8 @@ extension MRTViewController {
         
         
         mrtDetailPanel.mrtRoute.text = "\(getMRTEnglishName(station1)) <– –> \(getMRTEnglishName(station2))"
-        mrtDetailPanel.estimatedArrivalTime.text = "Arrived in \(time) minutes"
-        mrtDetailPanel.originalFee.text = "Fee: \(originalFee) TWD"
+        mrtDetailPanel.estimatedArrivalTime.text = "Arrived in \(time) mins"
+        mrtDetailPanel.originalFee.text = "Fee: \(originalFee) NTD"
         mrtDetailPanel.hidden = false
     }
     
