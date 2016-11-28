@@ -37,7 +37,7 @@
 新店,Xindian
 松山,Songshan
 南京三民,Nanjing Sanmin
-小巨蛋,Taipei Arena
+台北小巨蛋,Taipei Arena
 松江南京,Songjian Nanjin
 北門,Beimen
 小南門,Xiaonanmen
@@ -106,3 +106,4 @@
 劍南路,Jianan Road
 大直,Dazhi
 松山機場,Songshan Airport
+台北小巨蛋,

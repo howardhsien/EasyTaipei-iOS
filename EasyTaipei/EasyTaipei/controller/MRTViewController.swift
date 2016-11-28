@@ -227,7 +227,7 @@ extension MRTViewController {
         tapPoint = tapPoint.stringByReplacingOccurrencesOfString("(", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         tapPoint = tapPoint.stringByReplacingOccurrencesOfString(")", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
-        print(tapPoint)
+        //print(tapPoint)
         cleanButton()
     }
     
@@ -316,7 +316,12 @@ extension MRTViewController {
         
         if estimatedArrivalTimeData.count == 0 {
             //反向查詢，萬芳->動物園，變成動物園->萬芳
-            getEstimatedArrivalTimeData(station2, station2: station1)
+            requestForEstimatedArrivalTime.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station2, station1])
+            guard let estimatedArrivalTimeData = try? managedObjectContext!.executeFetchRequest(requestForEstimatedArrivalTime) as! [EstimatedArrivalTime] else {return 0}
+            if estimatedArrivalTimeData.first?.time != nil {
+                return  (estimatedArrivalTimeData.first?.time)!
+            }
+            
         }
         
         if estimatedArrivalTimeData.first?.time != nil {
@@ -335,11 +340,16 @@ extension MRTViewController {
         requestForMRTTransportationFee.fetchLimit = 3
         requestForMRTTransportationFee.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station1, station2])
         
-        guard let mrtTransportationFee = try? managedObjectContext!.executeFetchRequest(requestForMRTTransportationFee) as! [MRTTransportationFee] else {return 0}
+        guard let mrtTransportationFee = try? managedObjectContext!.executeFetchRequest(requestForMRTTransportationFee) as! [MRTTransportationFee] else { return 0 }
+
         
         if mrtTransportationFee.count == 0 {
             //反向查詢，萬芳->動物園，變成動物園->萬芳
-            getMRTTransportationFee(station2, station2: station1)
+            requestForMRTTransportationFee.predicate = NSPredicate(format: "station1 = %@ AND station2 = %@", argumentArray: [station2, station1])
+            guard let mrtTransportationFee = try? managedObjectContext!.executeFetchRequest(requestForMRTTransportationFee) as! [MRTTransportationFee] else {return 0}
+            if mrtTransportationFee.first?.originalFee != nil {
+                return (mrtTransportationFee.first?.originalFee)!
+            }
         }
         
         if mrtTransportationFee.first?.originalFee != nil {
