@@ -10,8 +10,9 @@ import UIKit
 
 class MRTDetailPanel: UIView {
     
-    @IBOutlet weak var mrtRoute: UILabel!
+    @IBOutlet weak var mrtDestination1: UILabel!
     
+    @IBOutlet weak var mrtDestination2: UILabel!
     @IBOutlet weak var estimatedArrivalTime: UILabel!
     
     @IBOutlet weak var originalFee: UILabel!

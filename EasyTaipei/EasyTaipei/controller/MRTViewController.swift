@@ -360,24 +360,30 @@ extension MRTViewController {
     }
     
     func showChineseDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
-        mrtDetailPanel.mrtRoute.text = "\(station1) <– –> \(station2)"
+        mrtDetailPanel.mrtDestination1.text = "\(station1)"
+        mrtDetailPanel.mrtDestination2.text = "\(station2)"
+
         mrtDetailPanel.estimatedArrivalTime.text = "行駛\(time)分鐘"
         mrtDetailPanel.originalFee.text = "票價\(originalFee)元"
         mrtDetailPanel.hidden = false
     }
     
     func showEnglishDetailPanel(station1: String, station2: String, time: NSNumber, originalFee: NSNumber){
-        mrtDetailPanel.mrtRoute.numberOfLines = 0
+//        mrtDetailPanel.mrtRoute.numberOfLines = 0
+        mrtDetailPanel.mrtDestination1.numberOfLines = 2
+        mrtDetailPanel.mrtDestination2.numberOfLines = 2
         mrtDetailPanel.estimatedArrivalTime.numberOfLines = 0
         mrtDetailPanel.originalFee.numberOfLines = 0
         //        mrtDetailPanel.mrtRoute.lineBreakMode = NSLineBreakMode.ByWordWrapping
         //        mrtDetailPanel.estimatedArrivalTime.lineBreakMode = NSLineBreakMode.ByWordWrapping
         //        mrtDetailPanel.originalFee.lineBreakMode = NSLineBreakMode.ByWordWrapping
         
-        
-        mrtDetailPanel.mrtRoute.text = "\(getMRTEnglishName(station1)) <– –> \(getMRTEnglishName(station2))"
-        mrtDetailPanel.estimatedArrivalTime.text = "Arrived in \(time) mins"
-        mrtDetailPanel.originalFee.text = "Fee: \(originalFee) NTD"
+        mrtDetailPanel.mrtDestination1.text = "\(getMRTEnglishName(station1))"
+        mrtDetailPanel.mrtDestination2.text = "\(getMRTEnglishName(station2))"
+
+       
+        mrtDetailPanel.estimatedArrivalTime.text = "time: \(time)min(s)"
+        mrtDetailPanel.originalFee.text = "Fee: \(originalFee)NTD"
         mrtDetailPanel.hidden = false
     }
     
